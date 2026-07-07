@@ -1,0 +1,733 @@
+{
+  "deck_name": "lssh_intl_edu_ppt",
+  "language": "Chinese",
+  "goal": "重新設計麗山高中行政與專題國際化行动研究報告，為其製作最完整的45頁教學解說簡報",
+  "deck_context": {
+    "source_summary": "麗山高中行動研究報告，闡述如何透過行政領航五力模型，推動「競賽、交流、參訪」三合一的國際教育旅行，解決科學特色高中專題研究難以走向國際的困境，使國際發表普惠化。",
+    "core_claim": "行政創新是驅動教學與課程接軌國際的核心引擎，主動出國的藍海策略能落實機會平權並深化校本課程。",
+    "canonical_terms": [
+      "科學移動力",
+      "行政領航五力模型",
+      "三合一創新模式",
+      "麗山智匯",
+      "ESP學術英語",
+      "減法哲學",
+      "都市生存演練"
+    ]
+  },
+  "selected_image_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+  "max_concurrent_slides": 6,
+  "style": {
+    "name": "科技領航專業風",
+    "visual_direction": "clean modern professional deck, calm technical presentation, structured evidence-driven layout, readable pragmatic visual system, light background with crisp hierarchy",
+    "color_palette": "deep professional blue (#1E3A8A) as primary, bright orange/gold (#F97316) as accent, slate gray (#475569) for body text, light gray (#F8FAFC) background",
+    "typography": "large bold Chinese headings in clean sans-serif font, compact clear body text"
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "封面",
+      "role": "cover",
+      "intent": "開啟報告，展示報告名稱、作者與榮譽",
+      "key_points": [
+        "行政領航驅動校本專題國際化：",
+        "「競賽、交流、參訪」三合一創新模式的國際教育旅行",
+        "臺北市第 27 屆教育專業創新與行動研究中學組特優作品",
+        "報告人與作者團隊：林獻升、郭瓊華、楊雅茹、林桔楷、簡君玲、陳汶靖"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_1_img_1.jpeg",
+          "role": "封面主視覺展示麗山高中標誌與意象",
+          "fidelity": "preserve image aspect ratio and layout"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "簡報大綱 (Agenda)",
+      "role": "agenda",
+      "intent": "展示簡報脈絡與五大核心板塊",
+      "key_points": [
+        "壹、緒論：面臨的辦學困境與策略轉型動機",
+        "貳、研究方法：行動研究與歷史演進歷程",
+        "參、討論：行政領航五力模型與校本專題課程",
+        "肆、成效：競賽、交流、參訪的具體實踐與成效",
+        "伍、省思：行動研究省思、未來建議與結論"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "壹、緒論與背景 (分區過渡頁)",
+      "role": "section divider",
+      "intent": "過渡到第一部分：探討科學高中辦學面臨的真實瓶頸",
+      "key_points": [
+        "壹、緒論與背景",
+        "科學特色辦學長期存在的困境與變革契機"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "科學教育特色與專題研究校本課程",
+      "role": "concept explanation",
+      "intent": "介紹麗山高中引以為傲的校本特色專題研究課程",
+      "key_points": [
+        "麗山高中自創校起，以「科學教育」為發展核心與願景",
+        "率先規劃「研究方法與專題研究」作為特色必修校本課程",
+        "每位學生均需投入一年半完成專題研究，並於校內科展發表",
+        "多年來累積優秀科研成果，在各類科學競賽屢創佳績"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "辦學困境的具體呈現：代表權邊緣化",
+      "role": "concept explanation",
+      "intent": "剖析優質專題研究難以走向國際的真實痛點",
+      "key_points": [
+        "創校初期 (2002-2007) 為 TISF 黃金時代，多次取得 ISEF 正選出國代表權",
+        "2018年後表現進入平穩期，獲選等級多集中於三、四等獎",
+        "三等獎以下無出國代表權，或僅能分配到非 ISEF 之次要賽事（如突尼西亞）",
+        "困境本質：學生一年半的科研心血，卻鮮少有機會站上國際舞台發表"
+      ]
+    },
+    {
+      "number": 6,
+      "title": "數據說話：麗山高中近年參加台灣國際科展 (TISF) 統計",
+      "role": "data evidence",
+      "intent": "用歷史表格數據佐證「代表權邊緣化」的辦學瓶頸",
+      "key_points": [
+        "2002-2016年：五度榮獲一等獎，薦送美國 ISEF 殿堂並獲學科首獎與大會獎",
+        "2018-2023年：集中於三、四等獎，代表權多為「無」",
+        "2024-2025年：獲得三等獎，代表權受限薦送突尼西亞 I-FEST",
+        "2026年：生物化學科獲得三等獎，無出國代表權"
+      ]
+    },
+    {
+      "number": 7,
+      "title": "困境背後的結構性原因分析",
+      "role": "comparison",
+      "intent": "分析為何原有優勢被稀釋，指出規則改變的現實",
+      "key_points": [
+        "原因一：108課綱推行後，全國高中普遍複製「專題研究」等課程，稀釋麗山先發優勢",
+        "原因二：TISF 全國僅選拔約 20 件作品出國，競爭激烈、名額僧多粥少",
+        "關鍵結論：並非麗山學生研究能力退步，而是傳統路徑規則改變，必須主動突破"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_3_collage.png",
+          "role": "Slide 7 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 8,
+      "title": "遊戲規則改變：並非學生退步，而是需要新路徑",
+      "role": "concept explanation",
+      "intent": "說明行政團隊發起改革的關鍵共識與理念",
+      "key_points": [
+        "若只依賴國家薦送的單一管道，每年能站上世界舞台的學生人數極為有限",
+        "這與定位為「國際化優質科學高中」的辦學願景產生嚴重落差",
+        "學校行政團隊必須跳出被動等待框架，為主動出擊尋找新通道"
+      ]
+    },
+    {
+      "number": 9,
+      "title": "戰略轉型：走向「主動出國」的藍海策略",
+      "role": "comparison",
+      "intent": "詳細對比紅海競爭與藍海戰略的轉變",
+      "key_points": [
+        "傳統模式（紅海）：競爭激烈、名額窄小，僅金字塔尖 1-2 位學生有機會出國",
+        "自費出國（藍海）：主動報名日本筑波 Science Edge 等具國際公信力賽事",
+        "變革效益：出國人數擴展至每年 30-40 位，極大地擴展了學生的國際發表機會",
+        "倒逼機制：用國際發表的學術門檻，回推並深化校內特色課程的品質"
+      ]
+    },
+    {
+      "number": 10,
+      "title": "策略引導：國際教育 2.0 政策下的雙軌轉型",
+      "role": "process",
+      "intent": "結合政策引導，定義「科學移動力」",
+      "key_points": [
+        "響應教育部重啟國際教育旅行白皮書 2.0「課程化、在地化、永續化」原則",
+        "行政團隊角色重構：從「程序執行者」轉型為「引領變革的課程領航者」",
+        "核心定義麗山「科學移動力」：具備以學術英語進行科學論證、與國際夥伴對等專題對話之核心素養"
+      ]
+    },
+    {
+      "number": 11,
+      "title": "麗山高中的國際教育四項策略目標",
+      "role": "architecture",
+      "intent": "展示推動國際教育的核心框架與目標",
+      "key_points": [
+        "目標一：以校本專題為核心融入 SDGs，將在地研究轉化為國際對話",
+        "目標二：強化素養教育，培養具備自主生存與危機解決能力之全人學生",
+        "目標三：營造全球公民校園，在真實跨國情境中學習尊重文化差異",
+        "目標四：深化跨國學術合作與姐妹校締結，推動學校永續品牌"
+      ]
+    },
+    {
+      "number": 12,
+      "title": "研究目的與待答問題",
+      "role": "concept explanation",
+      "intent": "說明本行動研究欲達成的具體成果與待答問題",
+      "key_points": [
+        "目的一：系統性解構傳統教育行政之困境，建構「行政領航五力模型」",
+        "目的二：剖析專題研究課程如何透過行政創新與三合一模式形成「在地深耕、全球發聲」",
+        "目的三：透過三學年度實證資料，分析本模式在科研人才、ESP 與公民素養之成效",
+        "目的四：歸納成功要素，提供其他高中參考"
+      ]
+    },
+    {
+      "number": 13,
+      "title": "文獻探討 1：STEM 國際教育趨勢與行政轉型",
+      "role": "concept explanation",
+      "intent": "探討 STEM 素養與行政課程領導理論背景",
+      "key_points": [
+        "Bybee 的 STEM 素養四層次：強調跨領域整合、真實情境應用與全球 SDGs 議題對接",
+        "Glatthorn 的課程領導：行政必須跨越與教學的藩籬，預算與人員配置對接課程目標",
+        "Bass 的轉型領導：行政角色昇華為轉型領導者，具備願景理想引領根本性變革"
+      ]
+    },
+    {
+      "number": 14,
+      "title": "文獻探討 2：隱性知識傳遞 (SECI 知識螺旋)",
+      "role": "architecture",
+      "intent": "探討知識螺旋與隱性經驗外化理論背景",
+      "key_points": [
+        "Nonaka 的 SECI 知識螺旋：將隱性經驗外化為顯性資產，促使組織持續學習",
+        "國際教育中的隱性知識：帶隊教師的指導策略、地鐵生存，及日本實驗室嚴謹的職人纪律",
+        "行政角色：建構平台與傳承機制，確保經驗在人員輪替中得以延續"
+      ]
+    },
+    {
+      "number": 15,
+      "title": "貳、研究方法與實施歷程 (分區過渡頁)",
+      "role": "section divider",
+      "intent": "過渡到第二部分：研究設計、模式演進與行程迭代",
+      "key_points": [
+        "貳、研究方法與實施歷程",
+        "行動研究設計與教育旅行模式歷史演進"
+      ]
+    },
+    {
+      "number": 16,
+      "title": "行動研究方法與研究場域人員",
+      "role": "process",
+      "intent": "說明行動研究的實施細節、場域與參與規模",
+      "key_points": [
+        "研究方法：行動研究法，循「規劃—行動—觀察—反省—再規劃」螺旋循環",
+        "研究場域：臺北市立麗山高級中學",
+        "參與人員：校長室、教務處、學務處、總務處、秘書室，及自然與英文科教師團隊",
+        "實施歷程：橫跨 112 至 114 學年度，累計帶領 106 名學生赴日"
+      ]
+    },
+    {
+      "number": 17,
+      "title": "歷史演進：傳統模式與進化模式對比",
+      "role": "data evidence",
+      "intent": "比較早期模式與進化模式，凸顯學術輸出的變革",
+      "key_points": [
+        "定位：多元文化與軟性體育交流 ➔ 校本專題與世界對話、學術發表的硬實力輸出",
+        "行程：景點觀光與才藝表演 ➔ 競賽、交流、參訪三合一，師生全員參與",
+        "培訓：國際禮儀與日語 ➔ 英文論文寫作、海報設計、全英文口頭防禦",
+        "成果：中文心得流水帳 ➔ 英文摘要、海報與答辯，結合學習歷程嚴格檢核"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_8_collage.png",
+          "role": "Slide 17 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 18,
+      "title": "進化模式實證數據：兩大時期對比表",
+      "role": "data evidence",
+      "intent": "呈現表 2 的對比表格，解說其教育意義",
+      "key_points": [
+        "詳細列出表 2 的兩大時期教育旅行模式之維度對比與演進分析",
+        "強調從「輸入型（文化體驗）」到「輸出型（學術實戰）」的變革",
+        "跨學科教師協同帶領，讓學生跨越語言與學術雙重門檻"
+      ]
+    },
+    {
+      "number": 19,
+      "title": "近三年日本教育旅行行程精緻化演進",
+      "role": "data evidence",
+      "intent": "呈現表 3，剖析行程的減法哲學與學術化迭代",
+      "key_points": [
+        "2024 年（廣泛接觸期）：安排 2 所學校交流，測試適應力，觀光科普比重較重",
+        "2025 年（聚焦精銳期）：深化與都立科技高中對話，參訪具科學流體力學之專業場館",
+        "2026 年（深度整合期）：實施減法哲學，淺草寺與晴空塔古今制震對照，以及非結構化城市生存任務"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_9_collage.png",
+          "role": "Slide 19 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 20,
+      "title": "學生甄選機制演進：建立正向科研文化誘因",
+      "role": "data evidence",
+      "intent": "呈現表 4，說明選才機制的科學化與常規考核",
+      "key_points": [
+        "2024年廣納期：確保基本參賽能力，有專題成果即可",
+        "2025年精進期：提升語言防禦門檻，英/日檢通過者優先",
+        "2026年成熟期：明確排序科展成就，德行、學業與出缺勤列入篩選",
+        "設計目的：確保參賽研究之競爭力，建立良性科研循環，並維護國家與校譽形象"
+      ]
+    },
+    {
+      "number": 21,
+      "title": "參、研究結果與討論 (分區過渡頁)",
+      "role": "section divider",
+      "intent": "過渡到第三部分：探討研究成果（行政五力模型與課程領航）",
+      "key_points": [
+        "參、研究結果與討論",
+        "行政領航五力模型與校本課程國際化"
+      ]
+    },
+    {
+      "number": 22,
+      "title": "行政領航五力模型：驅動行政角色轉型",
+      "role": "architecture",
+      "intent": "介紹驅動行政角色轉型的核心五力模型",
+      "key_points": [
+        "策略引領力：轉型領導者的願景引領與示範效應",
+        "矩陣協作力：打破處室藩籬，成立以課程目標為中心的橫向協作",
+        "知識管理力：建構「麗山智匯」平台，外化傳承隱性經驗",
+        "財務領導力：以課程目標導向反推預算編列，落實平權",
+        "組織學習力：賽後滾動修正與螺旋式缺失檢討改進"
+      ]
+    },
+    {
+      "number": 23,
+      "title": "(一) 策略引領力：轉型領導者的願景帶動",
+      "role": "concept explanation",
+      "intent": "說明校長願景與支持訊號對團隊的帶動作用",
+      "key_points": [
+        "校長親自率隊出訪，發揮強大示範效應，釋放行政最高層全力支持訊號",
+        "在大會現場聆聽報告、為學生鼓掌，激勵隨隊教師與學生的被正視感與榮譽感",
+        "親自參與行前模擬評審，帶動行政團隊深化行程與課程設計的內在動力"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_11_collage.png",
+          "role": "Slide 23 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 24,
+      "title": "(二) 矩陣協作力：打破處室藩籬的跨域整合",
+      "role": "data evidence",
+      "intent": "呈現表 5，解說打破傳統垂直分工的矩陣式協作",
+      "key_points": [
+        "傳統分工：處室垂直層級分明，公文往返流於形式，易陷入業務推諉",
+        "矩陣協作：以「課程目標」為中心橫向整合，雲端共筆協作與頻繁即時對話",
+        "共同責任：學務處主辦，教務處、秘書室協辦，各處室對課程目標共同負責"
+      ]
+    },
+    {
+      "number": 25,
+      "title": "國際教育推動小組之跨處室分工架構",
+      "role": "architecture",
+      "intent": "展示推動小組中各成員的職掌與跨處室協作鏈",
+      "key_points": [
+        "校長：行政總領航者，主持外交大會與外賓接待",
+        "學務處：活動統籌、招標發包、選才機制設計、安全督導",
+        "教務處：專題研究課程對接、學術英文微課程開設、國際學術交流",
+        "秘書室：對日交流學校聯繫、外賓接待、英文翻譯",
+        "總務與會計：預算編列、核銷作業、弱勢生團費全額補助行政支援",
+        "教學團隊：自然與英文科教師，負責專題指導、20小時微課程與隨隊競賽指導"
+      ]
+    },
+    {
+      "number": 26,
+      "title": "(三) 知識管理力與「麗山智匯」平台",
+      "role": "concept explanation",
+      "intent": "說明如何外化隱性傳承經驗，確保國際教育永續性",
+      "key_points": [
+        "解決痛點：防範帶隊教師輪替造成指導策略與日常細節的隱性經驗流失",
+        "理論應用：參考 Nonaka SECI 知識螺旋，建構雲端「麗山智匯」平台",
+        "知識外化：系統性收集培訓教材、學生發表範例、危機 SOP、姐妹校交流流程",
+        "傳承效益：下屆承辦人不必再從零摸索，確保國際教育的永續傳承"
+      ]
+    },
+    {
+      "number": 27,
+      "title": "(四) 財務領導力與 (五) 組織學習力",
+      "role": "concept explanation",
+      "intent": "說明財務領導與組織學習對落實平權和持續改進之價值",
+      "key_points": [
+        "財務領導：課程目標導向反推預算，編列微課程鐘點費，並高額補助弱勢學生團費，落實平權",
+        "選才數位化：線上申請與報名，實現行政減量，提升效率",
+        "行程檢核 SOP：建立行前、中、後三階段檢核，晚間檢討與健康回報",
+        "滾動改進：賽後檢討會反饋，2025年起加入「模擬答辯」，2026年起執行「定稿機制」"
+      ]
+    },
+    {
+      "number": 28,
+      "title": "課程領航：國際交流與校本專題之系統化期程",
+      "role": "data evidence",
+      "intent": "呈現表 6，剖析專題研究課程五階段與海外發表完美接軌",
+      "key_points": [
+        "第一至三階段：高一至高二的研究方法模組教學、專題初探及實驗數據收集",
+        "第四階段（發表）：高二下 2-4月，結合台灣國際科展、校內科展，並延伸至日本 Science Edge 全英文發表",
+        "第五階段（進階）：北市與全國科展發表，成果整理投稿科學期刊",
+        "教育意義：國際交流深度嵌入原本的專題研究課程中，讓科學成果走出臺灣"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_14_collage.png",
+          "role": "Slide 28 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 29,
+      "title": "發表舞台的雙軌擴充與適性分流",
+      "role": "comparison",
+      "intent": "解說國內外雙軌發表及適性分流的理念",
+      "key_points": [
+        "過去專題成果僅侷限於校內體育館以中文對校內學生發表",
+        "近年導入三合一模式，成功將發表舞台向國際擴充（日本筑波與交流學校）",
+        "分流機制：區分為「國內發表中文報告」與「國外發表英文報告」雙軌",
+        "教育意義：學生可依專題作品成熟度與自身的英語文能力，選擇最適合的舞台"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_15_collage.png",
+          "role": "Slide 29 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 30,
+      "title": "學術培訓鷹架：20 小時模組化學術微課程",
+      "role": "data evidence",
+      "intent": "呈現表 7，解說 20 小時微課程兩大模組內容與賽制對應",
+      "key_points": [
+        "培訓模組一：英文科學論文寫作（10小時）── 獲獎邏輯、摘要撰寫、SDGs 對接、海報設計",
+        "培訓模組二：英文論文口語發表（10小時）── TED 演講技巧、簡報語調矯正、模擬答辯",
+        "設計目標：跨科協作建立培訓鷹架，直接提升學生的學術英語與科研發表能力"
+      ]
+    },
+    {
+      "number": 31,
+      "title": "鷹架階段一：英文科學論文寫作與視覺敘事",
+      "role": "concept explanation",
+      "intent": "說明寫作模組、SDGs 對接與海報設計的培訓實踐",
+      "key_points": [
+        "解構 Science Edge 獲獎邏輯，在 10 小時內將完整實驗報告濃縮為兩頁英文摘要",
+        "引導將題目與研究內容對接 SDGs 永續目標，提升國際評審關注度",
+        "教導視覺動線（標題-方法-圖表-結論），強調「圖表會說話」的數據轉譯",
+        "舉辦海報初評 Gallery Walk，測試海報吸引力並進行同儕互評"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_16_collage.png",
+          "role": "Slide 31 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 32,
+      "title": "鷹架階段二：口語發表特訓與「魔鬼評審團」",
+      "role": "concept explanation",
+      "intent": "解說英語口語、無腳本答辯與晚上模擬特訓實戰",
+      "key_points": [
+        "英文與學科教師協同，訓練科學重音、眼神接觸與肢體語言",
+        "開設「英語 Q&A 攻防戰」，培訓高壓下抓取問題關鍵字，使用避險句型爭取時間",
+        "隨隊教師在日本飯店晚間扮演刁鑽評審，進行全真模擬答辯與壓力特訓",
+        "核心領航：邏輯推演與清晰圖表是最好答辯武器，瓦解對英語口語黑洞的恐懼"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_17_collage.png",
+          "role": "Slide 32 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 33,
+      "title": "肆、三合一創新模式之實踐成效 (分區過渡頁)",
+      "role": "section divider",
+      "intent": "過渡到第四部分：競賽、交流、參訪實踐現場與成效實證",
+      "key_points": [
+        "肆、三合一創新模式之實踐成效",
+        "競賽、交流、參訪三合一模式實證分析"
+      ]
+    },
+    {
+      "number": 34,
+      "title": "實踐一：競賽 (Competition) ── 筑波 Science Edge 國際舞台",
+      "role": "architecture",
+      "intent": "介紹 Science Edge 競賽的規格與賽制挑戰",
+      "key_points": [
+        "堅持兩日完整賽程：讓學生完全浸潤在國際頂尖科學賽事與高強度發表中",
+        "對接 SDGs：評分要求參賽作品須對接 SDGs，闡述創新性、創意與社會可行性",
+        "四大發表形式：大會口頭、衛星發表、攤位展示、樓層海報展示，提供多層次學術鍛鍊",
+        "實戰價值：引導學生將在地研究提升至全球永續發展的高度"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_19_collage.png",
+          "role": "Slide 34 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 35,
+      "title": "麗山代表性專題與 SDGs 全球議題之對接",
+      "role": "data evidence",
+      "intent": "呈現表 8 專題與 SDGs 對接數據",
+      "key_points": [
+        "呈現表 8。列舉麗山學生近年獲獎專題與 SDGs 的對接",
+        "SDGs 7 (可負擔能源)：雨水能量收集、翼尖小翼風力發電",
+        "SDGs 14 & 15 (海洋與陸地生態)：不同棲地蛇類運動生物力學、斑腿樹蛙防治建議",
+        "SDGs 3 (健康與福祉)：脂肪酸衍生物對免疫細胞殺傷膠質瘤能力之影響"
+      ]
+    },
+    {
+      "number": 36,
+      "title": "實踐二：交流 (Exchange) ── 千葉縣立長生高校混合科學實作",
+      "role": "concept explanation",
+      "intent": "說明長生高校的文化沉浸與混合分組物理實作探究",
+      "key_points": [
+        "百年 SSH 學校的文化沉浸體驗（更換室內鞋、管樂迎賓樂曲）",
+        "打破單向聆聽：設計「混合分組科學實作探究」，臺日學生混合編組",
+        "實作任務：共同面對物理力學任務，攜手設計機關與進行競賽",
+        "交流效益：共同任務迫使學生放下英語文法包袱，體會「數理與科學邏輯是共通語言」"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_20_collage.png",
+          "role": "Slide 36 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 37,
+      "title": "實踐二：交流 (Exchange) ── 東京都立科學技術高校姊妹校學術激盪",
+      "role": "concept explanation",
+      "intent": "介紹都立科技高校交流、姊妹校正式締結與同儕效應",
+      "key_points": [
+        "日本培養頂尖科學家之搖籃，2025年正式與麗山締結姊妹校",
+        "全英文專題海報與簡報發表；深入參觀其先進科學實驗室",
+        "正向同儕效應：日本學生關心在地生態與實用社會問題，激勵麗山學生的科研社會價值",
+        "職人精神：日本實驗室嚴謹的數據追求、整齊收納與詳細記錄，震撼並深化學生研究態度"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_21_collage.png",
+          "role": "Slide 37 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 38,
+      "title": "實踐三：參訪 (Visit) ── 貫徹減法哲學的場域探究",
+      "role": "concept explanation",
+      "intent": "解說減法哲學如何讓學生進行深度科學觀察與工程對話",
+      "key_points": [
+        "減法原則：摒棄景點數量最大化，強制設定專業場域「至少一小時停留底線」",
+        "跨時空抗震工程對話：對比五重塔「心柱」抗震與晴空塔的核心制震技術",
+        "人工生態系與 SDGs：墨田水族館領先全球的人工海水生成系統，實踐碳減排",
+        "比較地質學：國立科學博物館日本館，對照臺日板塊構造與防災科技"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_22_collage.png",
+          "role": "Slide 38 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 39,
+      "title": "非結構化學習：東京都市自主生存演練",
+      "role": "concept explanation",
+      "intent": "說明「放權」城市自主生存演練對國際移動力與獨立性之形塑",
+      "key_points": [
+        "行動設計：拔除遊覽車與教師保護傘，發放西瓜卡 (Welcome Suica)，小組半日自主踏查",
+        "真實試誤：經歷搭錯方向、迷路、點錯餐等窘境，被迫啟動危機決策與團隊溝通",
+        "生存效益：有效解除學生對成人的依賴，大幅提升抗壓性、決策力與國際移動自信",
+        "未來升級：規劃加入學術觀察任務（如東京通用設計觀察、人流力學分析）"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_23_collage.png",
+          "role": "Slide 39 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 40,
+      "title": "模式總對比：傳統觀光旅行 vs 三合一專題學術模式",
+      "role": "data evidence",
+      "intent": "呈現表 9 的對比矩陣，說明變革的綜合效應",
+      "key_points": [
+        "詳細列出表 9 的七個指標維度之系統性對照",
+        "從軟性體驗、與課程脫鉤、被動參觀，轉為學術競爭力、高度課程化與主動發表",
+        "從才藝聯誼轉為全英文專題答辯；行政角色從業務承辦轉為課程領航"
+      ]
+    },
+    {
+      "number": 41,
+      "title": "科學競賽能力之實證躍升：近三年成果展示",
+      "role": "process",
+      "intent": "用實證數據展示 2024 至 2026 年在 Science Edge 的獲獎層級與組數躍升",
+      "key_points": [
+        "2024 年：11組海報/1組攤位/2組衛星，榮獲衛星發表二等獎、三等獎與現場海報獎",
+        "2025 年：13組攤位/16組海報展示，榮獲大會現場海報獎，為少數獲獎之海外代表隊",
+        "2026 年：入圍 20 組創歷史新高，榮獲英文組第一名（榮獲20萬日圓大會補助）與第二名，口頭發表獲鼓勵賞",
+        "延續發展：三組獲獎團隊均獲推薦，前去新加坡 GLS 國際賽事，舞台從臺灣、日本延伸到新加坡"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_25_collage.png",
+          "role": "Slide 41 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 42,
+      "title": "學生核心素養之質變：ESP 專業英文與人格韌性",
+      "role": "concept explanation",
+      "intent": "解說學生專業英文質變、生活教育、情緒復原力與品牌行銷成效",
+      "key_points": [
+        "ESP 質變：高壓答辯中迫使學生將英語作為「解決問題、捍衛論點」之工具",
+        "生活與韌性：在日常合作與自主移動中落實全人教育，在未獲獎的挫折中培養情緒復原力",
+        "升學資本與行銷：連結 SDGs 專題產出高質量學習歷程檔案；官網新聞行銷推廣學校國際化品牌"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_27_collage.png",
+          "role": "Slide 42 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 43,
+      "title": "伍、實踐省思與未來展望 (分區過渡頁)",
+      "role": "section divider",
+      "intent": "過渡到第五部分：行動研究的反省省思與優化建議",
+      "key_points": [
+        "伍、實踐省思與未來展望",
+        "行動研究省思與未來優化策略"
+      ]
+    },
+    {
+      "number": 44,
+      "title": "行動研究省思與精緻化建議",
+      "role": "architecture",
+      "intent": "提出具體可行的四項優化建議",
+      "key_points": [
+        "行程優化：貫徹「減法哲學」，明定一小時停留，導入探究學習單或任務導向學習",
+        "心理與認知：海外赛前完成簡報海報「最終定稿」，減少熬夜修改，賽後隔日排出身心緩衝行程",
+        "制度協作：維持常態化小組運作，透過麗山智匯累積顯性經驗，避免因人員異動中斷",
+        "教育平權：主動爭取外部補助，編列預算輔助弱勢，保障教育機會平權"
+      ],
+      "required_images": [
+        {
+          "path": "assets/page_31_collage.png",
+          "role": "Slide 44 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "layout": {
+        "composition": "source collage left, structured explanation right"
+      }
+    },
+    {
+      "number": 45,
+      "title": "陸、結論：以校本專題走向世界的麗山經驗",
+      "role": "summary / closing",
+      "intent": "總結麗山經驗，為高中推展深耕型國際教育提供典範",
+      "key_points": [
+        "證實行政創新能驅動教學變革與國際接軌",
+        "成功採取藍海策略：跳出 TISF 紅海競爭，開闢自主、低門檻、普及化的國際發表渠道",
+        "實施「主動出國 + 精銳培訓 + 三合一行程」，使國際發表從少數菁英教育轉為普及的廣度教育",
+        "四項目標實現：專題本位、全人素養、全球公民、跨國合作與永續學校品牌"
+      ]
+    }
+  ],
+  "sample_generation_method": {
+    "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+    "tool_name": "scripts/image_gen.py",
+    "mode": "generate",
+    "prompt_source": "approved sample slide prompts for slide_22 and slide_36",
+    "size": "16:9 landscape, 2048x1152 target",
+    "quality": "medium",
+    "approved_sample_path": "origin_image/slide_36.png",
+    "input_context_preparation": "inspect style references before generation; pass strict input assets with edit --image only when a slide job lists input_images",
+    "handoff_rule": "Subagents must use this same backend/tool/config; use generate for new slides unless the assigned job has strict input_images or is a repair."
+  },
+  "approved_style_reference": {
+    "path": "origin_image/slide_36.png",
+    "role": "approved sample slide style reference",
+    "fidelity": "match style only; do not copy layout or content"
+  }
+}

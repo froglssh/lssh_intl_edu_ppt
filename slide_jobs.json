@@ -1,0 +1,1720 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "lssh_intl_edu_ppt",
+  "selected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+  "sample_generation_method": {
+    "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+    "tool_name": "scripts/image_gen.py",
+    "mode": "generate",
+    "prompt_source": "approved sample slide prompts for slide_22 and slide_36",
+    "size": "16:9 landscape, 2048x1152 target",
+    "quality": "medium",
+    "approved_sample_path": "origin_image/slide_36.png",
+    "input_context_preparation": "inspect style references before generation; pass strict input assets with edit --image only when a slide job lists input_images",
+    "handoff_rule": "Subagents must use this same backend/tool/config; use generate for new slides unless the assigned job has strict input_images or is a repair."
+  },
+  "max_concurrent_slides": 6,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "封面",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_1_img_1.jpeg",
+          "role": "封面主視覺展示麗山高中標誌與意象",
+          "fidelity": "preserve image aspect ratio and layout"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "3181fb9e-16fb-4cf2-828f-fdf403ce8c62",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "42233507c3a3edef759e32e5cff5eca55b157a27c491fca99b523a3702cc346e",
+        "dispatched_at": "2026-07-07T13:35:56Z"
+      },
+      "result": {
+        "agent_id": "3181fb9e-16fb-4cf2-828f-fdf403ce8c62",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_01_candidate.png",
+        "selected_source_sha256": "667019c18caed083a074827085133e8068e9e615a437ee89eb1619357e572b5f",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "667019c18caed083a074827085133e8068e9e615a437ee89eb1619357e572b5f",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "封面已成功生成，包含麗山高中照片，文字與配色符合科技領航專業風",
+        "recorded_at": "2026-07-07T13:38:22Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "簡報大綱 (Agenda)",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "881f1abf-45f1-4fa1-8d88-c65c21cdf1d7",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "395a56b712fc8d27c7605ad36be627ef8a197b8325d805f1854a38d175c27606",
+        "dispatched_at": "2026-07-07T13:35:56Z"
+      },
+      "result": {
+        "agent_id": "881f1abf-45f1-4fa1-8d88-c65c21cdf1d7",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_02_candidate.png",
+        "selected_source_sha256": "8ca214cd8831db6c8e410430b980ad3d7ec523ac401da3abed4de541c1f5522e",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "8ca214cd8831db6c8e410430b980ad3d7ec523ac401da3abed4de541c1f5522e",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "大綱投影片中文文字清晰無亂碼，配色符合科技領航專業風",
+        "recorded_at": "2026-07-07T13:37:45Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "壹、緒論與背景 (分區過渡頁)",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "b3b6797e-034a-4bd9-869e-9b854515d70f",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "b35293daf21661a4039eb38de1cbf5ef54709695262161ee5f2dc2d5688a37e1",
+        "dispatched_at": "2026-07-07T13:35:56Z"
+      },
+      "result": {
+        "agent_id": "b3b6797e-034a-4bd9-869e-9b854515d70f",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_03_candidate.png",
+        "selected_source_sha256": "04136ad56586811fbf58239721115ba9370dc8f0aa643eeb39f98609d38013dd",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "04136ad56586811fbf58239721115ba9370dc8f0aa643eeb39f98609d38013dd",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "過渡頁標題與副標題繁體中文清晰無誤，排版層次分明",
+        "recorded_at": "2026-07-07T13:37:39Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "科學教育特色與專題研究校本課程",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "dd991f93-c05a-4c3a-ae1d-79a7ba74cdd2",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "052a9ed22eff4dd7223bbc98a9f752b89101f779282b8cb8f0bcbb3c977abdd4",
+        "dispatched_at": "2026-07-07T13:35:56Z"
+      },
+      "result": {
+        "agent_id": "dd991f93-c05a-4c3a-ae1d-79a7ba74cdd2",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_04_candidate.png",
+        "selected_source_sha256": "ad0ac18990a20eabaa996365f5ab9ca1371bf0834629e7342cf08c60f0a31f1d",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "ad0ac18990a20eabaa996365f5ab9ca1371bf0834629e7342cf08c60f0a31f1d",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "文字清晰，排版與風格參考一致",
+        "recorded_at": "2026-07-07T13:37:58Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "辦學困境的具體呈現：代表權邊緣化",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "5ac452aa-7ac3-476b-a887-a34d97979924",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "1b2b14be6e0630891b2dbfcddd570ff38a5b45c33732b4d0defd79c1b50614b1",
+        "dispatched_at": "2026-07-07T13:35:57Z"
+      },
+      "result": {
+        "agent_id": "5ac452aa-7ac3-476b-a887-a34d97979924",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_05_candidate.png",
+        "selected_source_sha256": "4bfa700a9bd23939f4a465c6bb3033aa5a44d755cb9385e384c728dc1db906aa",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "4bfa700a9bd23939f4a465c6bb3033aa5a44d755cb9385e384c728dc1db906aa",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "文字清晰，符合排版風格",
+        "recorded_at": "2026-07-07T13:37:58Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "數據說話：麗山高中近年參加台灣國際科展 (TISF) 統計",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "9c1015c8-55ca-44d4-80fa-7e0555bfb099",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "7623d80149ed5c1da2a770a2f1a339520862801acfae2f96e96a5684723d805e",
+        "dispatched_at": "2026-07-07T13:35:57Z"
+      },
+      "result": {
+        "agent_id": "9c1015c8-55ca-44d4-80fa-7e0555bfb099",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_06_candidate.png",
+        "selected_source_sha256": "baef318c31068addf2a95bee0b51e1bdbb9ef58713fb0405aebbaee75ea5c2f0",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "baef318c31068addf2a95bee0b51e1bdbb9ef58713fb0405aebbaee75ea5c2f0",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "表格數據清晰無損，配色完美對齊風格",
+        "recorded_at": "2026-07-07T13:37:52Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "困境背後的結構性原因分析",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_3_collage.png",
+          "role": "Slide 7 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "87e16ca4-062f-4e09-bde0-267f0b632a8f",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "e3a19fc25608afa4dab74e1d3ef64819cc2de6ce6c3e794b87da54b9081d72da",
+        "dispatched_at": "2026-07-07T13:37:45Z"
+      },
+      "result": {
+        "agent_id": "87e16ca4-062f-4e09-bde0-267f0b632a8f",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_07_candidate.png",
+        "selected_source_sha256": "52214d76ba079ea06c0f2829d2e1f170f82926d6c3c0386868ca9f5a76871dc5",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "52214d76ba079ea06c0f2829d2e1f170f82926d6c3c0386868ca9f5a76871dc5",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "成功在左側保留3圖拼貼底圖，排版無誤且符合核准風格",
+        "recorded_at": "2026-07-07T13:39:27Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "遊戲規則改變：並非學生退步，而是需要新路徑",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "226764be-cc7d-44e5-af6e-0425fa1380c6",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "1847cebe55f0b031ccbf3e2eebd46f71fd46a9395921e38aa0ca2970d1b908c2",
+        "dispatched_at": "2026-07-07T13:37:52Z"
+      },
+      "result": {
+        "agent_id": "226764be-cc7d-44e5-af6e-0425fa1380c6",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_08_candidate.png",
+        "selected_source_sha256": "c37a5e7050be218a3c101f21482b598ca1c9ffc73207879697907d7ba4048a58",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "c37a5e7050be218a3c101f21482b598ca1c9ffc73207879697907d7ba4048a58",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "圖片生成成功，排版清晰且文字無誤",
+        "recorded_at": "2026-07-07T13:39:02Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "戰略轉型：走向「主動出國」的藍海策略",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "c282638f-a8ec-464e-9515-9070b88676f9",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "a5b5f55c2c382f0d5914df3a6fac6a3deaf77e19834b339b9869f5c5412e4d25",
+        "dispatched_at": "2026-07-07T13:37:58Z"
+      },
+      "result": {
+        "agent_id": "c282638f-a8ec-464e-9515-9070b88676f9",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_09_candidate.png",
+        "selected_source_sha256": "26d157b3610d8d01a72cac46da1892890f3526d70c82d31e5c1b6fd6d20cd599",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "26d157b3610d8d01a72cac46da1892890f3526d70c82d31e5c1b6fd6d20cd599",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "藍海策略投影片生成成功，排版清晰",
+        "recorded_at": "2026-07-07T13:39:34Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "策略引導：國際教育 2.0 政策下的雙軌轉型",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "795bd631-e120-44c9-93cb-7a85e7b39275",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "e5b3bc826f6b14bc36a603de4ee2452624564a58b1d5320b80755113f169ecfa",
+        "dispatched_at": "2026-07-07T13:38:04Z"
+      },
+      "result": {
+        "agent_id": "795bd631-e120-44c9-93cb-7a85e7b39275",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_10_candidate.png",
+        "selected_source_sha256": "545d61ef14bd41260b441c2ff8f227f141d3e55541f8d053e864152c49579b23",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "545d61ef14bd41260b441c2ff8f227f141d3e55541f8d053e864152c49579b23",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "雙軌轉型投影片生成成功，排版工整",
+        "recorded_at": "2026-07-07T13:39:34Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "麗山高中的國際教育四項策略目標",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "03f9baa5-9ceb-4c7a-bb27-96b36559c58e",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "46e2e44561b7861c253944dbbad5b19310bd8be869069b90ef0028bbccf63afb",
+        "dispatched_at": "2026-07-07T13:38:04Z"
+      },
+      "result": {
+        "agent_id": "03f9baa5-9ceb-4c7a-bb27-96b36559c58e",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_11_candidate.png",
+        "selected_source_sha256": "95805c0c4a640ea6130de6a678e1aab14f07c541d8827e72d78919815cde9f6c",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "95805c0c4a640ea6130de6a678e1aab14f07c541d8827e72d78919815cde9f6c",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "投影片繁體中文清晰美觀，完美符合風格藍橘主題",
+        "recorded_at": "2026-07-07T13:39:24Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "研究目的與待答問題",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "bf766a32-3fd3-405c-937e-2c6c4151dec6",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "40fc99095cd0db095e5268adb545fb5add0c265812cb13f4834935d914c52cfd",
+        "dispatched_at": "2026-07-07T13:38:27Z"
+      },
+      "result": {
+        "agent_id": "bf766a32-3fd3-405c-937e-2c6c4151dec6",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_12_candidate.png",
+        "selected_source_sha256": "b9dc7240501c405767d306a8accbae1e2e395cafe07674aae6aebb80c9b9af44",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "b9dc7240501c405767d306a8accbae1e2e395cafe07674aae6aebb80c9b9af44",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "研究目的投影片生成成功，排版清晰",
+        "recorded_at": "2026-07-07T13:39:44Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "文獻探討 1：STEM 國際教育趨勢與行政轉型",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "f9945e5d-5a73-4ed4-9f81-c72f4f664b58",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "4a7571b60e2968158875d644735ba91f090d1089aa4dc111f8e873fc60a9bcdb",
+        "dispatched_at": "2026-07-07T13:39:08Z"
+      },
+      "result": {
+        "agent_id": "f9945e5d-5a73-4ed4-9f81-c72f4f664b58",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_13_candidate.png",
+        "selected_source_sha256": "a850f128cea68eb05daec516370244bfefe4aa902492f57f818f90a436c8daa0",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "a850f128cea68eb05daec516370244bfefe4aa902492f57f818f90a436c8daa0",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "文獻探討1投影片生成成功，文字清晰無誤",
+        "recorded_at": "2026-07-07T13:40:40Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "文獻探討 2：隱性知識傳遞 (SECI 知識螺旋)",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "91ee446c-d142-4cc1-b56d-cd7b989dd57d",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "67f857da60a480346773fa14eb6798ae8216107b71e6807c934ec793028e5af8",
+        "dispatched_at": "2026-07-07T13:39:41Z"
+      },
+      "result": {
+        "agent_id": "91ee446c-d142-4cc1-b56d-cd7b989dd57d",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_14_candidate.png",
+        "selected_source_sha256": "2ed5f108edeb66c73e0105c985748f2d0d16989684f5347a817183c910176597",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "2ed5f108edeb66c73e0105c985748f2d0d16989684f5347a817183c910176597",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "文獻探討3投影片生成成功，圖文對齊排版無誤",
+        "recorded_at": "2026-07-07T13:41:10Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_15",
+      "number": 15,
+      "title": "貳、研究方法與實施歷程 (分區過渡頁)",
+      "job": "prompts/slide_15.json",
+      "out": "origin_image/slide_15.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "69b1a419-d087-4e40-ae46-00e97fb48ce0",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_15.json",
+        "prompt_sha256": "c7b084e46406b42caa85704c0dc080dd51a138bd034727dd0065ee1e15044140",
+        "dispatched_at": "2026-07-07T13:39:41Z"
+      },
+      "result": {
+        "agent_id": "69b1a419-d087-4e40-ae46-00e97fb48ce0",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_15_candidate.png",
+        "selected_source_sha256": "52128b1e3c0a04b250915d88eaec35899e28e3f3afe011ba7ae7fd605c1de685",
+        "final_image": "origin_image/slide_15.png",
+        "final_image_sha256": "52128b1e3c0a04b250915d88eaec35899e28e3f3afe011ba7ae7fd605c1de685",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "過渡頁投影片生成成功，文字清晰",
+        "recorded_at": "2026-07-07T13:40:57Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_16",
+      "number": 16,
+      "title": "行動研究方法與研究場域人員",
+      "job": "prompts/slide_16.json",
+      "out": "origin_image/slide_16.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "9817fbf9-3791-4259-abde-bb63eb86f268",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_16.json",
+        "prompt_sha256": "322f0f37192dd708deaaf3bbef288f162f38fcdd7d372e12489f0dae75b64cf5",
+        "dispatched_at": "2026-07-07T13:39:41Z"
+      },
+      "result": {
+        "agent_id": "9817fbf9-3791-4259-abde-bb63eb86f268",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_16_candidate.png",
+        "selected_source_sha256": "269ad48fd328e3540568eb49eb5b83145e33e03377a8f0d31faeb92fbea62109",
+        "final_image": "origin_image/slide_16.png",
+        "final_image_sha256": "269ad48fd328e3540568eb49eb5b83145e33e03377a8f0d31faeb92fbea62109",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "成功生成三合一創新模式整體架構模型圖，文字清晰無亂碼",
+        "recorded_at": "2026-07-07T13:41:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_17",
+      "number": 17,
+      "title": "歷史演進：傳統模式與進化模式對比",
+      "job": "prompts/slide_17.json",
+      "out": "origin_image/slide_17.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_8_collage.png",
+          "role": "Slide 17 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "f9f9e9c1-db36-4544-b45d-4e865d42d186",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_17.json",
+        "prompt_sha256": "6df6ba3637a66bf2c068360006f77549576db5d166df3a2dcd366dabaf34294d",
+        "dispatched_at": "2026-07-07T13:39:41Z"
+      },
+      "result": {
+        "agent_id": "f9f9e9c1-db36-4544-b45d-4e865d42d186",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_17_candidate.png",
+        "selected_source_sha256": "b5b58b8eb79603ccfe33ffb0da685a4aeb5c3504728242228fe36f3abc3a116c",
+        "final_image": "origin_image/slide_17.png",
+        "final_image_sha256": "b5b58b8eb79603ccfe33ffb0da685a4aeb5c3504728242228fe36f3abc3a116c",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "成功保留進化對比拼貼底圖，排版無誤且風格對齊",
+        "recorded_at": "2026-07-07T13:45:21Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_18",
+      "number": 18,
+      "title": "進化模式實證數據：兩大時期對比表",
+      "job": "prompts/slide_18.json",
+      "out": "origin_image/slide_18.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "7136003c-b260-49d7-a4c9-0090a4d90aeb",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_18.json",
+        "prompt_sha256": "7fc1bfe188ed9ec26d5ddf25a9dacea60e09ccad503a6383e0e5cdb9dfd005ab",
+        "dispatched_at": "2026-07-07T13:39:48Z"
+      },
+      "result": {
+        "agent_id": "7136003c-b260-49d7-a4c9-0090a4d90aeb",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_18_candidate.png",
+        "selected_source_sha256": "66a82d105d21a8e687fdbb387d4d6c31f3205fb4a92effff3f99aa16a101922d",
+        "final_image": "origin_image/slide_18.png",
+        "final_image_sha256": "66a82d105d21a8e687fdbb387d4d6c31f3205fb4a92effff3f99aa16a101922d",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "進化模式實證數據對比表投影片生成成功，排版清晰無誤",
+        "recorded_at": "2026-07-07T13:42:19Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_19",
+      "number": 19,
+      "title": "近三年日本教育旅行行程精緻化演進",
+      "job": "prompts/slide_19.json",
+      "out": "origin_image/slide_19.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_9_collage.png",
+          "role": "Slide 19 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "0db32120-8413-4264-b2ce-82feb80bfa68",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_19.json",
+        "prompt_sha256": "baf0bad5de6132ac3c3014520ebb3f3aae9b5841155fba0059b469eded3dc2af",
+        "dispatched_at": "2026-07-07T13:40:46Z"
+      },
+      "result": {
+        "agent_id": "0db32120-8413-4264-b2ce-82feb80bfa68",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_19_candidate.png",
+        "selected_source_sha256": "9992fcd40b75e8fc1eb3ba39bb677420413d523bfcc98c670e427860179f2162",
+        "final_image": "origin_image/slide_19.png",
+        "final_image_sha256": "9992fcd40b75e8fc1eb3ba39bb677420413d523bfcc98c670e427860179f2162",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "行程精緻化演進投影片成功生成，拼貼圖與文字排版符合規範",
+        "recorded_at": "2026-07-07T13:42:08Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_20",
+      "number": 20,
+      "title": "學生甄選機制演進：建立正向科研文化誘因",
+      "job": "prompts/slide_20.json",
+      "out": "origin_image/slide_20.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "04826245-4daf-4459-8d8a-80abf647c4e0",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_20.json",
+        "prompt_sha256": "c66c4b989b3d1a1b0b89117fb71fada8f6479aaefb3e592a370d44ac1bf7e829",
+        "dispatched_at": "2026-07-07T13:41:01Z"
+      },
+      "result": {
+        "agent_id": "04826245-4daf-4459-8d8a-80abf647c4e0",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_20_candidate.png",
+        "selected_source_sha256": "212779746b411b3f2a413429321b16b27f050ef0d3920fb1477d54d210d5db7f",
+        "final_image": "origin_image/slide_20.png",
+        "final_image_sha256": "212779746b411b3f2a413429321b16b27f050ef0d3920fb1477d54d210d5db7f",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "表格排版工整，文字清晰無亂碼",
+        "recorded_at": "2026-07-07T13:42:25Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_21",
+      "number": 21,
+      "title": "參、研究結果與討論 (分區過渡頁)",
+      "job": "prompts/slide_21.json",
+      "out": "origin_image/slide_21.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "14d52245-bdac-466b-87b0-5fe49db4e872",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_21.json",
+        "prompt_sha256": "8a20d72dcca8f6db1edeef99f6f8d6439dd838e8cc167d134b8f858f932e4487",
+        "dispatched_at": "2026-07-07T13:41:19Z"
+      },
+      "result": {
+        "agent_id": "14d52245-bdac-466b-87b0-5fe49db4e872",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_21_candidate.png",
+        "selected_source_sha256": "bb1fb13334e691cd6ab8cfc3732adb7ef8854be7aab3e0980b658ee96e79687d",
+        "final_image": "origin_image/slide_21.png",
+        "final_image_sha256": "bb1fb13334e691cd6ab8cfc3732adb7ef8854be7aab3e0980b658ee96e79687d",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "過渡頁投影片生成成功，排版清晰無誤",
+        "recorded_at": "2026-07-07T13:42:28Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_22",
+      "number": 22,
+      "title": "行政領航五力模型：驅動行政角色轉型",
+      "job": "prompts/slide_22.json",
+      "out": "origin_image/slide_22.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "agent_id": "parent",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/origin_image/slide_22.png",
+        "selected_source_sha256": "",
+        "final_image": "origin_image/slide_22.png",
+        "final_image_sha256": "",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "qa_note": "Approved sample slide",
+        "recorded_at": "2026-07-07T21:35:00Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_23",
+      "number": 23,
+      "title": "(一) 策略引領力：轉型領導者的願景帶動",
+      "job": "prompts/slide_23.json",
+      "out": "origin_image/slide_23.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_11_collage.png",
+          "role": "Slide 23 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "3fdb5d8b-e9bd-4d09-9a4d-ea10d09db905",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_23.json",
+        "prompt_sha256": "d4bbbd3dc970c569fb7e32c3e15ce0c92defa97827ea6bd6519c6b3ae383f616",
+        "dispatched_at": "2026-07-07T13:41:19Z"
+      },
+      "result": {
+        "agent_id": "3fdb5d8b-e9bd-4d09-9a4d-ea10d09db905",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_23_candidate.png",
+        "selected_source_sha256": "90051642d2108fef7590e5a4227ae5e0b7cd6be5ba258ef501ab94003f784ce5",
+        "final_image": "origin_image/slide_23.png",
+        "final_image_sha256": "90051642d2108fef7590e5a4227ae5e0b7cd6be5ba258ef501ab94003f784ce5",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "策略引領與競賽投影片生成成功，左側完整保留3圖拼貼",
+        "recorded_at": "2026-07-07T13:42:51Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_24",
+      "number": 24,
+      "title": "(二) 矩陣協作力：打破處室藩籬的跨域整合",
+      "job": "prompts/slide_24.json",
+      "out": "origin_image/slide_24.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "d3556b7e-fb1b-4874-ad44-5e9d93e02caf",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_24.json",
+        "prompt_sha256": "281a5ef6a4153fd8906dabb2d2214932d9fefdd13c8f230738b3bb829a7d0ada",
+        "dispatched_at": "2026-07-07T13:42:14Z"
+      },
+      "result": {
+        "agent_id": "d3556b7e-fb1b-4874-ad44-5e9d93e02caf",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_24_candidate.png",
+        "selected_source_sha256": "7d31ecf4e64dcc3afe7267b3203547b043f39aa858f7330d3e255d9f34c5e741",
+        "final_image": "origin_image/slide_24.png",
+        "final_image_sha256": "7d31ecf4e64dcc3afe7267b3203547b043f39aa858f7330d3e255d9f34c5e741",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "課程引領力架構投影片生成成功，排版清晰無誤",
+        "recorded_at": "2026-07-07T13:43:27Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_25",
+      "number": 25,
+      "title": "國際教育推動小組之跨處室分工架構",
+      "job": "prompts/slide_25.json",
+      "out": "origin_image/slide_25.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "1598c73e-92c1-4c9a-af91-101f6d18b4a5",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_25.json",
+        "prompt_sha256": "418d3de27b02059424f65ad60a9bd3180b81a8235b70844d9e13224e0c11c0b5",
+        "dispatched_at": "2026-07-07T13:42:25Z"
+      },
+      "result": {
+        "agent_id": "1598c73e-92c1-4c9a-af91-101f6d18b4a5",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_25_candidate.png",
+        "selected_source_sha256": "70e8d5f7cefd4533eedcc3594f4b4c09c28525a6ff1a4f0b89f8998be4c7f3ce",
+        "final_image": "origin_image/slide_25.png",
+        "final_image_sha256": "70e8d5f7cefd4533eedcc3594f4b4c09c28525a6ff1a4f0b89f8998be4c7f3ce",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "參訪行程投影片生成成功，排版清晰符合規範",
+        "recorded_at": "2026-07-07T13:43:41Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_26",
+      "number": 26,
+      "title": "(三) 知識管理力與「麗山智匯」平台",
+      "job": "prompts/slide_26.json",
+      "out": "origin_image/slide_26.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "add42b93-9f2a-41d6-955c-cef042e16318",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_26.json",
+        "prompt_sha256": "9942dca36874bfb46b8f5a2755a045e4d3a349261374c8d0c001a797675e3387",
+        "dispatched_at": "2026-07-07T13:42:34Z"
+      },
+      "result": {
+        "agent_id": "add42b93-9f2a-41d6-955c-cef042e16318",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_26_candidate.png",
+        "selected_source_sha256": "1a7444d2edc22d435ec9dac2a59fe42bb24c8655deed564fd040314fcc5d39ec",
+        "final_image": "origin_image/slide_26.png",
+        "final_image_sha256": "1a7444d2edc22d435ec9dac2a59fe42bb24c8655deed564fd040314fcc5d39ec",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "並行期程投影片生成成功，排版工整",
+        "recorded_at": "2026-07-07T13:43:53Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_27",
+      "number": 27,
+      "title": "(四) 財務領導力與 (五) 組織學習力",
+      "job": "prompts/slide_27.json",
+      "out": "origin_image/slide_27.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "9c8611fe-d46c-47e4-9123-d40bc6270bec",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_27.json",
+        "prompt_sha256": "c79ee59469b2d1f9434c83ad281b6f145fdd7f6380f390dbf749a5c2c94a4238",
+        "dispatched_at": "2026-07-07T13:42:34Z"
+      },
+      "result": {
+        "agent_id": "9c8611fe-d46c-47e4-9123-d40bc6270bec",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_27_candidate.png",
+        "selected_source_sha256": "0b1b786fa0f2bd0e00651ea271fb04d092d3a8a9398d29c17dbf59d3f74554e7",
+        "final_image": "origin_image/slide_27.png",
+        "final_image_sha256": "0b1b786fa0f2bd0e00651ea271fb04d092d3a8a9398d29c17dbf59d3f74554e7",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "雙軌成果投影片生成成功，排版清晰無誤",
+        "recorded_at": "2026-07-07T13:43:57Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_28",
+      "number": 28,
+      "title": "課程領航：國際交流與校本專題之系統化期程",
+      "job": "prompts/slide_28.json",
+      "out": "origin_image/slide_28.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_14_collage.png",
+          "role": "Slide 28 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "91d83a19-030f-4af4-ba68-ab3bbe1ab7fc",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_28.json",
+        "prompt_sha256": "5cf4e32522eff5741d5e4c13566c8269174650b8daf4dca07899af7cedf50cfc",
+        "dispatched_at": "2026-07-07T13:42:54Z"
+      },
+      "result": {
+        "agent_id": "91d83a19-030f-4af4-ba68-ab3bbe1ab7fc",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_28_candidate.png",
+        "selected_source_sha256": "d786394fb62a9e61d164c24e8d91db9c8dd0e2170c8de21c40e22275758425cb",
+        "final_image": "origin_image/slide_28.png",
+        "final_image_sha256": "d786394fb62a9e61d164c24e8d91db9c8dd0e2170c8de21c40e22275758425cb",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "國際交流系統化期程投影片生成成功，保留拼貼圖並排版清晰",
+        "recorded_at": "2026-07-07T13:45:04Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_29",
+      "number": 29,
+      "title": "發表舞台的雙軌擴充與適性分流",
+      "job": "prompts/slide_29.json",
+      "out": "origin_image/slide_29.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_15_collage.png",
+          "role": "Slide 29 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "5cbbc375-24be-4279-a04f-14b249f2afdd",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_29.json",
+        "prompt_sha256": "950fe5378121b0805c72f48ca0609d8421251c4a7acadf3ec5d41093b7e45a8d",
+        "dispatched_at": "2026-07-07T13:43:31Z"
+      },
+      "result": {
+        "agent_id": "5cbbc375-24be-4279-a04f-14b249f2afdd",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_29_candidate.png",
+        "selected_source_sha256": "0346ae13b57d741c82316f80315dca673e80947486259982e65f9b49adbefd52",
+        "final_image": "origin_image/slide_29.png",
+        "final_image_sha256": "0346ae13b57d741c82316f80315dca673e80947486259982e65f9b49adbefd52",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "發表舞台雙軌擴充投影片生成成功，文字無亂碼",
+        "recorded_at": "2026-07-07T13:45:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_30",
+      "number": 30,
+      "title": "學術培訓鷹架：20 小時模組化學術微課程",
+      "job": "prompts/slide_30.json",
+      "out": "origin_image/slide_30.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "0ae39cf8-b5ac-45e8-a7f7-ebf971f6c82d",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_30.json",
+        "prompt_sha256": "a69e0f77bb1d77223760c2ea75a47bd12666e478d1298dee17d957a825cb359e",
+        "dispatched_at": "2026-07-07T13:43:47Z"
+      },
+      "result": {
+        "agent_id": "0ae39cf8-b5ac-45e8-a7f7-ebf971f6c82d",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_30_candidate.png",
+        "selected_source_sha256": "9decaedc8bac1b50b4528958670a5c3b1181cf9a301686a5825f8fb4df179ae3",
+        "final_image": "origin_image/slide_30.png",
+        "final_image_sha256": "9decaedc8bac1b50b4528958670a5c3b1181cf9a301686a5825f8fb4df179ae3",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "專案管理分工投影片生成成功，排版無誤",
+        "recorded_at": "2026-07-07T13:45:21Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_31",
+      "number": 31,
+      "title": "鷹架階段一：英文科學論文寫作與視覺敘事",
+      "job": "prompts/slide_31.json",
+      "out": "origin_image/slide_31.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_16_collage.png",
+          "role": "Slide 31 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "b88a7a64-f589-407a-8c1d-755c93107b73",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_31.json",
+        "prompt_sha256": "08969c04dd4e771c05c78a6ed4990af4ce4c0ec91b30b583dbab8968effd4f6a",
+        "dispatched_at": "2026-07-07T13:43:57Z"
+      },
+      "result": {
+        "agent_id": "b88a7a64-f589-407a-8c1d-755c93107b73",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_31_candidate.png",
+        "selected_source_sha256": "b3711be85b7dff013d77f1bf34fbe4be4739cb09c581aec401c7bcb8c6561a1e",
+        "final_image": "origin_image/slide_31.png",
+        "final_image_sha256": "b3711be85b7dff013d77f1bf34fbe4be4739cb09c581aec401c7bcb8c6561a1e",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "摘要與視覺敘事投影片生成成功，6圖拼貼完整保留",
+        "recorded_at": "2026-07-07T13:49:35Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_32",
+      "number": 32,
+      "title": "鷹架階段二：口語發表特訓與「魔鬼評審團」",
+      "job": "prompts/slide_32.json",
+      "out": "origin_image/slide_32.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_17_collage.png",
+          "role": "Slide 32 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "b4011de5-f7e4-49ea-be79-4160308f05ee",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_32.json",
+        "prompt_sha256": "3a04de777084b2cbdfacbcfcc9f0892dc96ccffc7d9f0494b0f32958153496cd",
+        "dispatched_at": "2026-07-07T13:44:03Z"
+      },
+      "result": {
+        "agent_id": "b4011de5-f7e4-49ea-be79-4160308f05ee",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_32_candidate.png",
+        "selected_source_sha256": "9f62ca5a6bb5f38c252835bb18a4cfdf7794dd63e6b8da51fe9421c62c899f75",
+        "final_image": "origin_image/slide_32.png",
+        "final_image_sha256": "9f62ca5a6bb5f38c252835bb18a4cfdf7794dd63e6b8da51fe9421c62c899f75",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "口語特訓投影片生成成功，9圖拼貼完整保留",
+        "recorded_at": "2026-07-07T13:47:00Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_33",
+      "number": 33,
+      "title": "肆、三合一創新模式之實踐成效 (分區過渡頁)",
+      "job": "prompts/slide_33.json",
+      "out": "origin_image/slide_33.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "bf5a9f33-5d9b-48ab-a837-09ffd2beaf13",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_33.json",
+        "prompt_sha256": "50891ca6e43591aec9af8dec20f735bb5e5b8d49db11a3be801faac1c53639c4",
+        "dispatched_at": "2026-07-07T13:45:08Z"
+      },
+      "result": {
+        "agent_id": "bf5a9f33-5d9b-48ab-a837-09ffd2beaf13",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_33_candidate.png",
+        "selected_source_sha256": "98e01bcc7ce6a678684e7f60df54a0580ad131c7e8d3615bfdeda97799e5cd22",
+        "final_image": "origin_image/slide_33.png",
+        "final_image_sha256": "98e01bcc7ce6a678684e7f60df54a0580ad131c7e8d3615bfdeda97799e5cd22",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "實踐成效過渡頁投影片生成成功，排版清晰",
+        "recorded_at": "2026-07-07T13:46:22Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_34",
+      "number": 34,
+      "title": "實踐一：競賽 (Competition) ── 筑波 Science Edge 國際舞台",
+      "job": "prompts/slide_34.json",
+      "out": "origin_image/slide_34.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_19_collage.png",
+          "role": "Slide 34 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "8a5466b7-2d99-4da8-a962-8ff2b8e89de1",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_34.json",
+        "prompt_sha256": "9db921bc8d2c7108e0692bc5ed28e31d0b720a785036eb13aa1ab042f07ec15a",
+        "dispatched_at": "2026-07-07T13:45:17Z"
+      },
+      "result": {
+        "agent_id": "8a5466b7-2d99-4da8-a962-8ff2b8e89de1",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_34_candidate.png",
+        "selected_source_sha256": "058529b495ea6ce27884ae5494d441b7ac8f40dd5c434da348149b54dba21d7e",
+        "final_image": "origin_image/slide_34.png",
+        "final_image_sha256": "058529b495ea6ce27884ae5494d441b7ac8f40dd5c434da348149b54dba21d7e",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "競賽成果投影片生成成功，15圖拼貼完整保留",
+        "recorded_at": "2026-07-07T13:47:35Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_35",
+      "number": 35,
+      "title": "麗山代表性專題與 SDGs 全球議題之對接",
+      "job": "prompts/slide_35.json",
+      "out": "origin_image/slide_35.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "6da48d42-71e2-4a29-bf41-846f2b8a7ecf",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_35.json",
+        "prompt_sha256": "e01ff18e3ca5d0cbe61e56be74305a1ff0eab95ed691e5979b2816f5f08527d9",
+        "dispatched_at": "2026-07-07T13:45:27Z"
+      },
+      "result": {
+        "agent_id": "6da48d42-71e2-4a29-bf41-846f2b8a7ecf",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_35_candidate.png",
+        "selected_source_sha256": "c8ed2b1b9ab2e4cedc789300ee56ad4b4b049b9024d461ff18e7054271942ace",
+        "final_image": "origin_image/slide_35.png",
+        "final_image_sha256": "c8ed2b1b9ab2e4cedc789300ee56ad4b4b049b9024d461ff18e7054271942ace",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "文化沉浸與SDGs對照投影片生成成功，排版清晰符合規範",
+        "recorded_at": "2026-07-07T13:46:49Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_36",
+      "number": 36,
+      "title": "實踐二：交流 (Exchange) ── 千葉縣立長生高校混合科學實作",
+      "job": "prompts/slide_36.json",
+      "out": "origin_image/slide_36.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_20_collage.png",
+          "role": "Slide 36 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "agent_id": "parent",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/origin_image/slide_36.png",
+        "selected_source_sha256": "",
+        "final_image": "origin_image/slide_36.png",
+        "final_image_sha256": "",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "qa_note": "Approved sample slide",
+        "recorded_at": "2026-07-07T21:35:00Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_37",
+      "number": 37,
+      "title": "實踐二：交流 (Exchange) ── 東京都立科學技術高校姊妹校學術激盪",
+      "job": "prompts/slide_37.json",
+      "out": "origin_image/slide_37.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_21_collage.png",
+          "role": "Slide 37 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "55a5b947-a90c-4539-8152-e3c5eb6317c9",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_37.json",
+        "prompt_sha256": "150aee77925544ead8fdaf9c312316fe3e1ca4318feb6419c96b448d651ca451",
+        "dispatched_at": "2026-07-07T13:45:28Z"
+      },
+      "result": {
+        "agent_id": "55a5b947-a90c-4539-8152-e3c5eb6317c9",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_37_candidate.png",
+        "selected_source_sha256": "5c86cb0a9109eb33efc99d8168b6799a794c4ea1e1ab530f18703a179d01358c",
+        "final_image": "origin_image/slide_37.png",
+        "final_image_sha256": "5c86cb0a9109eb33efc99d8168b6799a794c4ea1e1ab530f18703a179d01358c",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "都立科學高校交流投影片生成成功，9圖拼貼完整保留",
+        "recorded_at": "2026-07-07T13:50:44Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_38",
+      "number": 38,
+      "title": "實踐三：參訪 (Visit) ── 貫徹減法哲學的場域探究",
+      "job": "prompts/slide_38.json",
+      "out": "origin_image/slide_38.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_22_collage.png",
+          "role": "Slide 38 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "24443e5e-4858-4e5e-a23b-0b0947867f31",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_38.json",
+        "prompt_sha256": "57cde0b3d01e6e389b40b0502da97452f42d3260f7b30a9cafd1a22508915e13",
+        "dispatched_at": "2026-07-07T13:46:27Z"
+      },
+      "result": {
+        "agent_id": "24443e5e-4858-4e5e-a23b-0b0947867f31",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_38_candidate.png",
+        "selected_source_sha256": "40abf4dcb5051520784079ffa163bf0c89ac2acac7ac1d42bc8fe87c80197f56",
+        "final_image": "origin_image/slide_38.png",
+        "final_image_sha256": "40abf4dcb5051520784079ffa163bf0c89ac2acac7ac1d42bc8fe87c80197f56",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "東京科學景點參訪投影片生成成功，9圖拼貼完整保留",
+        "recorded_at": "2026-07-07T13:48:04Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_39",
+      "number": 39,
+      "title": "非結構化學習：東京都市自主生存演練",
+      "job": "prompts/slide_39.json",
+      "out": "origin_image/slide_39.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_23_collage.png",
+          "role": "Slide 39 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "5cabe0e1-0070-4b16-8795-00eec25504eb",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_39.json",
+        "prompt_sha256": "18204e3b56679a3daf45632b3ec0305927e38ab20e1c042edee7ac6b8581ccad",
+        "dispatched_at": "2026-07-07T13:46:55Z"
+      },
+      "result": {
+        "agent_id": "5cabe0e1-0070-4b16-8795-00eec25504eb",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_39_candidate.png",
+        "selected_source_sha256": "3d621612cd85fecc983e0d431672f5f15ea7dbce3fe0bf287afc3c4318119b3f",
+        "final_image": "origin_image/slide_39.png",
+        "final_image_sha256": "3d621612cd85fecc983e0d431672f5f15ea7dbce3fe0bf287afc3c4318119b3f",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "城市探索投影片生成成功，3圖拼貼完整保留",
+        "recorded_at": "2026-07-07T13:48:21Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_40",
+      "number": 40,
+      "title": "模式總對比：傳統觀光旅行 vs 三合一專題學術模式",
+      "job": "prompts/slide_40.json",
+      "out": "origin_image/slide_40.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "0c5a5194-e356-4af9-8275-f2474c166c4f",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_40.json",
+        "prompt_sha256": "63b6373976dcb9089498360ac44ac211245a5f74eb4c6cc80146e316b55a78af",
+        "dispatched_at": "2026-07-07T13:47:07Z"
+      },
+      "result": {
+        "agent_id": "0c5a5194-e356-4af9-8275-f2474c166c4f",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_40_candidate.png",
+        "selected_source_sha256": "3f9b5332c275877a5c0045bd1f0139fe6bc748c7425e893a45366dcaf4a2ffcb",
+        "final_image": "origin_image/slide_40.png",
+        "final_image_sha256": "3f9b5332c275877a5c0045bd1f0139fe6bc748c7425e893a45366dcaf4a2ffcb",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "研究成效過渡頁投影片生成成功，排版清晰無誤",
+        "recorded_at": "2026-07-07T13:48:41Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_41",
+      "number": 41,
+      "title": "科學競賽能力之實證躍升：近三年成果展示",
+      "job": "prompts/slide_41.json",
+      "out": "origin_image/slide_41.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_25_collage.png",
+          "role": "Slide 41 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "bc9e69c8-538c-4677-a13a-3111119f47cc",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_41.json",
+        "prompt_sha256": "5bf30b845bf8342437fb8ff8c431ad2417506f7c087fa02cac08721b33eb9860",
+        "dispatched_at": "2026-07-07T13:47:40Z"
+      },
+      "result": {
+        "agent_id": "bc9e69c8-538c-4677-a13a-3111119f47cc",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_41_candidate.png",
+        "selected_source_sha256": "dec70d8d4990d7fb43fcad2297c08d1cf716e5ff363ce4de349c48e8b73c77d2",
+        "final_image": "origin_image/slide_41.png",
+        "final_image_sha256": "dec70d8d4990d7fb43fcad2297c08d1cf716e5ff363ce4de349c48e8b73c77d2",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "科學競賽能力成果投影片生成成功，6圖拼貼完整保留",
+        "recorded_at": "2026-07-07T13:49:49Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_42",
+      "number": 42,
+      "title": "學生核心素養之質變：ESP 專業英文與人格韌性",
+      "job": "prompts/slide_42.json",
+      "out": "origin_image/slide_42.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_27_collage.png",
+          "role": "Slide 42 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "6acef7ea-9b27-44d3-a741-137ce5e07504",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_42.json",
+        "prompt_sha256": "294b7a21ee7f2d1836deb5a1db278d7b80b0c2211946730ae0a4938db1d727eb",
+        "dispatched_at": "2026-07-07T13:48:10Z"
+      },
+      "result": {
+        "agent_id": "6acef7ea-9b27-44d3-a741-137ce5e07504",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_42_candidate.png",
+        "selected_source_sha256": "c329cd3ae26790d8d4193db75da78defcd5ecab17799f904e93778a2d4e8d7a5",
+        "final_image": "origin_image/slide_42.png",
+        "final_image_sha256": "c329cd3ae26790d8d4193db75da78defcd5ecab17799f904e93778a2d4e8d7a5",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "ESP學術英文與全人教育投影片生成成功，3圖拼貼完整保留",
+        "recorded_at": "2026-07-07T13:53:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_43",
+      "number": 43,
+      "title": "伍、實踐省思與未來展望 (分區過渡頁)",
+      "job": "prompts/slide_43.json",
+      "out": "origin_image/slide_43.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "6e096b02-4460-4994-af89-eb3cb7b788aa",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_43.json",
+        "prompt_sha256": "eefadf58991a71331ffd1052c753517995fefa598bab71535ae022a2a3b18510",
+        "dispatched_at": "2026-07-07T13:48:24Z"
+      },
+      "result": {
+        "agent_id": "6e096b02-4460-4994-af89-eb3cb7b788aa",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_43_candidate.png",
+        "selected_source_sha256": "d388910c6e1896ca928b448630ffdfde2d7284cacf0db82cb7523601ec0d658e",
+        "final_image": "origin_image/slide_43.png",
+        "final_image_sha256": "d388910c6e1896ca928b448630ffdfde2d7284cacf0db82cb7523601ec0d658e",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "問卷統計投影片生成成功，排版清晰符合範本",
+        "recorded_at": "2026-07-07T13:49:29Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_44",
+      "number": 44,
+      "title": "行動研究省思與精緻化建議",
+      "job": "prompts/slide_44.json",
+      "out": "origin_image/slide_44.png",
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_31_collage.png",
+          "role": "Slide 44 multi-image collage showing research artifacts/activities",
+          "fidelity": "preserve details and layout structure of the collage grid"
+        }
+      ],
+      "style_reference_images": [],
+      "requires_context_images": true,
+      "expected_generation_mode": "edit",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "bdf6cd59-b6eb-4301-8e5f-63a98c7812c9",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_44.json",
+        "prompt_sha256": "ec2924c43d2537b809a328b8fb69f8b06b08bd786aff02a53182ae69d0d4e0b8",
+        "dispatched_at": "2026-07-07T13:48:46Z"
+      },
+      "result": {
+        "agent_id": "bdf6cd59-b6eb-4301-8e5f-63a98c7812c9",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_44_candidate.png",
+        "selected_source_sha256": "15ecc8ad6d734cb2a98a5b8fbcb5c91fc29335f59a5d270f8dc8065adc049b3f",
+        "final_image": "origin_image/slide_44.png",
+        "final_image_sha256": "15ecc8ad6d734cb2a98a5b8fbcb5c91fc29335f59a5d270f8dc8065adc049b3f",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "省思與展望投影片生成成功，6圖拼貼完整保留",
+        "recorded_at": "2026-07-07T14:14:47Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_45",
+      "number": 45,
+      "title": "陸、結論：以校本專題走向世界的麗山經驗",
+      "job": "prompts/slide_45.json",
+      "out": "origin_image/slide_45.png",
+      "input_images": [],
+      "style_reference_images": [],
+      "requires_context_images": false,
+      "expected_generation_mode": "generate",
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "50b1632d-905e-40e0-b1e4-6f520aa5b611",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_45.json",
+        "prompt_sha256": "d5de3fb390a002d563606ac20766dfe4af7abbb78f8ee64a29472046c109843f",
+        "dispatched_at": "2026-07-07T13:49:35Z"
+      },
+      "result": {
+        "agent_id": "50b1632d-905e-40e0-b1e4-6f520aa5b611",
+        "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_45_candidate.png",
+        "selected_source_sha256": "7ca1aee9d50871e8e4db4ba25c803d90f854f1d373a9ab8d3c1b11e1981660c2",
+        "final_image": "origin_image/slide_45.png",
+        "final_image_sha256": "7ca1aee9d50871e8e4db4ba25c803d90f854f1d373a9ab8d3c1b11e1981660c2",
+        "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+        "expected_backend_labels": [
+          "scripts/image_gen.py --backend auto (codex-oauth)",
+          "scripts/image_gen.py"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "致謝與 Q&A 投影片生成成功，文字排版清晰",
+        "recorded_at": "2026-07-07T13:50:54Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-07-07T14:14:47Z"
+}

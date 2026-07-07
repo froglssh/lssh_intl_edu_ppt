@@ -1,0 +1,35 @@
+{
+  "slide": 16,
+  "title": "行動研究方法與研究場域人員",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"Chinese\",\n  \"slide_number\": 16,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\n重新設計麗山高中行政與專題國際化行动研究報告，為其製作最完整的45頁教學解說簡報\n\n## Required Background\n{\n  \"deck_context\": {\n    \"source_summary\": \"麗山高中行動研究報告，闡述如何透過行政領航五力模型，推動「競賽、交流、參訪」三合一的國際教育旅行，解決科學特色高中專題研究難以走向國際的困境，使國際發表普惠化。\",\n    \"core_claim\": \"行政創新是驅動教學與課程接軌國際的核心引擎，主動出國的藍海策略能落實機會平權並深化校本課程。\",\n    \"canonical_terms\": [\n      \"科學移動力\",\n      \"行政領航五力模型\",\n      \"三合一創新模式\",\n      \"麗山智匯\",\n      \"ESP學術英語\",\n      \"減法哲學\",\n      \"都市生存演練\"\n    ]\n  }\n}\n\n## Global Style\n{\n  \"name\": \"科技領航專業風\",\n  \"visual_direction\": \"clean modern professional deck, calm technical presentation, structured evidence-driven layout, readable pragmatic visual system, light background with crisp hierarchy\",\n  \"color_palette\": \"deep professional blue (#1E3A8A) as primary, bright orange/gold (#F97316) as accent, slate gray (#475569) for body text, light gray (#F8FAFC) background\",\n  \"typography\": \"large bold Chinese headings in clean sans-serif font, compact clear body text\"\n}\n\n## Slide\n{\n  \"number\": 16,\n  \"title\": \"行動研究方法與研究場域人員\",\n  \"role\": \"process\",\n  \"intent\": \"說明行動研究的實施細節、場域與參與規模\"\n}\n\n## Text\n{\n  \"title\": \"行動研究方法與研究場域人員\",\n  \"key_points\": [\n    \"研究方法：行動研究法，循「規劃—行動—觀察—反省—再規劃」螺旋循環\",\n    \"研究場域：臺北市立麗山高級中學\",\n    \"參與人員：校長室、教務處、學務處、總務處、秘書室，及自然與英文科教師團隊\",\n    \"實施歷程：橫跨 112 至 114 學年度，累計帶領 106 名學生赴日\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render Chinese text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_16.png",
+  "candidate_out": "drafts/slide_16_candidate.png",
+  "input_images": [],
+  "style_reference_images": [],
+  "requires_context_images": false,
+  "expected_generation_mode": "generate",
+  "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
+  "sample_generation_method": null,
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": false,
+    "default_mode": "generate",
+    "use_edit_only_when": [
+      "input_images is non-empty",
+      "repairing an existing generated slide"
+    ],
+    "must_inspect_style_reference_images": false,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}
