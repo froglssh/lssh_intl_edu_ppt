@@ -160,16 +160,10 @@
 - Layout role: data evidence
 
 ## Slide 19: 近三年日本教育旅行行程精緻化演進
-- Title: 行程精緻化演進
-- Key points:
-  - 呈現表 3。2024 年為「廣泛接觸期」，安排 2 所學校交流，觀光與科普比例較重
-  - 2025 年為「聚焦精銳期」，深化與都立科技高中對話，參訪具流體力學與防震科學之場域
-  - 2026 年為「深度整合期」，實施減法哲學，古今制震工程對照，以及 Suica 城市自主生存任務
-- Layout role: data evidence
-- Required images:
-  - Slide 19 multi-image collage; strict input asset; preserve layout and photos
-
-    ![Collage 19](assets/page_9_collage.png)
+### Text
+- 2024 廣泛接觸期：交流千葉長生高與都立科技高(2所)，參訪千葉科學館、晴空塔。主動測試學生適應力，觀光科普比重較重。
+- 2025 聚焦精銳期：聚焦交流都立科技高(1所)以深化對話，參訪航空科學博物館、防災館等。轉向具流體力學與防震實作場域。
+- 2026 深度整合期：深化都立科技高交流(締結姊妹校)，參訪JAXA與進行淺草寺-晴空塔古今制震對照。實施減法哲學並引入都市生存任務。
 ## Slide 20: 學生甄選機制演進：建立正向科研文化誘因
 - Title: 學生甄選機制演進
 - Key points:

@@ -693,39 +693,33 @@
       "title": "近三年日本教育旅行行程精緻化演進",
       "job": "prompts/slide_19.json",
       "out": "origin_image/slide_19.png",
-      "input_images": [
-        {
-          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_9_collage.png",
-          "role": "Slide 19 multi-image collage showing research artifacts/activities",
-          "fidelity": "preserve details and layout structure of the collage grid"
-        }
-      ],
+      "input_images": [],
       "style_reference_images": [],
       "requires_context_images": true,
-      "expected_generation_mode": "edit",
+      "expected_generation_mode": "generate",
       "status": "recorded",
       "dispatch": {
-        "agent_id": "0db32120-8413-4264-b2ce-82feb80bfa68",
+        "agent_id": "00290862-fffc-4d28-a363-84097235fc0f",
         "agent_nickname": null,
         "prompt": "prompts/slide_19.json",
-        "prompt_sha256": "baf0bad5de6132ac3c3014520ebb3f3aae9b5841155fba0059b469eded3dc2af",
-        "dispatched_at": "2026-07-07T13:40:46Z"
+        "prompt_sha256": "201ad416556e248a03b21cb30f2560429f680ebad6908ef22037c9207648969f",
+        "dispatched_at": "2026-07-07T14:56:55Z"
       },
       "result": {
-        "agent_id": "0db32120-8413-4264-b2ce-82feb80bfa68",
+        "agent_id": "00290862-fffc-4d28-a363-84097235fc0f",
         "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
         "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_19_candidate.png",
-        "selected_source_sha256": "9992fcd40b75e8fc1eb3ba39bb677420413d523bfcc98c670e427860179f2162",
+        "selected_source_sha256": "5829950b5af78124e07162894dd790828a807ac5ccd5ce9de3a93157bc1e04b2",
         "final_image": "origin_image/slide_19.png",
-        "final_image_sha256": "9992fcd40b75e8fc1eb3ba39bb677420413d523bfcc98c670e427860179f2162",
+        "final_image_sha256": "5829950b5af78124e07162894dd790828a807ac5ccd5ce9de3a93157bc1e04b2",
         "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
         "expected_backend_labels": [
           "scripts/image_gen.py --backend auto (codex-oauth)",
           "scripts/image_gen.py"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "行程精緻化演進投影片成功生成，拼貼圖與文字排版符合規範",
-        "recorded_at": "2026-07-07T13:42:08Z"
+        "qa_note": "第十九頁置換為無圖、詳細表3內容成功",
+        "recorded_at": "2026-07-07T14:58:16Z"
       },
       "blocker": null
     },
@@ -1722,5 +1716,5 @@
       "blocker": null
     }
   ],
-  "updated_at": "2026-07-07T14:52:06Z"
+  "updated_at": "2026-07-07T14:58:16Z"
 }
