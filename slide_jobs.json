@@ -1568,8 +1568,8 @@
       "input_images": [
         {
           "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_27_collage.png",
-          "role": "Slide 42 multi-image collage showing research artifacts/activities",
-          "fidelity": "preserve details and layout structure of the collage grid"
+          "role": "Slide 42 重新合成了三張實景照：左上為日本洗手照，右上為高壓答辯照，最下方橫跨為聚餐照",
+          "fidelity": "preserve details and layout structure of this new 3-image grid on the left side of the slide"
         }
       ],
       "style_reference_images": [],
@@ -1577,27 +1577,27 @@
       "expected_generation_mode": "edit",
       "status": "recorded",
       "dispatch": {
-        "agent_id": "6acef7ea-9b27-44d3-a741-137ce5e07504",
+        "agent_id": "c28d79ee-4f48-45fe-b450-04c8ced42836",
         "agent_nickname": null,
         "prompt": "prompts/slide_42.json",
-        "prompt_sha256": "294b7a21ee7f2d1836deb5a1db278d7b80b0c2211946730ae0a4938db1d727eb",
-        "dispatched_at": "2026-07-07T13:48:10Z"
+        "prompt_sha256": "02c5a1ec4cf6eb93a216e1e894b816022c4373bf0a7dd32b2bae5ac67ef3ac0c",
+        "dispatched_at": "2026-07-07T15:53:41Z"
       },
       "result": {
-        "agent_id": "6acef7ea-9b27-44d3-a741-137ce5e07504",
+        "agent_id": "c28d79ee-4f48-45fe-b450-04c8ced42836",
         "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
         "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_42_candidate.png",
-        "selected_source_sha256": "c329cd3ae26790d8d4193db75da78defcd5ecab17799f904e93778a2d4e8d7a5",
+        "selected_source_sha256": "e989ab4a241cf41538c777853c952c9fcbc03a7c575115d75c8bbf8bbc507009",
         "final_image": "origin_image/slide_42.png",
-        "final_image_sha256": "c329cd3ae26790d8d4193db75da78defcd5ecab17799f904e93778a2d4e8d7a5",
+        "final_image_sha256": "e989ab4a241cf41538c777853c952c9fcbc03a7c575115d75c8bbf8bbc507009",
         "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
         "expected_backend_labels": [
           "scripts/image_gen.py --backend auto (codex-oauth)",
           "scripts/image_gen.py"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "ESP學術英文與全人教育投影片生成成功，3圖拼貼完整保留",
-        "recorded_at": "2026-07-07T13:53:12Z"
+        "qa_note": "第四十二頁左側拼貼重整（洗手+發表Q&A上，用餐下）成功",
+        "recorded_at": "2026-07-07T15:55:05Z"
       },
       "blocker": null
     },
@@ -1716,5 +1716,5 @@
       "blocker": null
     }
   ],
-  "updated_at": "2026-07-07T15:36:41Z"
+  "updated_at": "2026-07-07T15:55:05Z"
 }
