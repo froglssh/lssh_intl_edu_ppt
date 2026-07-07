@@ -33,27 +33,27 @@
       "expected_generation_mode": "edit",
       "status": "recorded",
       "dispatch": {
-        "agent_id": "3181fb9e-16fb-4cf2-828f-fdf403ce8c62",
+        "agent_id": "b838aae7-c16c-41ae-b463-d6454a36ab53",
         "agent_nickname": null,
         "prompt": "prompts/slide_01.json",
-        "prompt_sha256": "42233507c3a3edef759e32e5cff5eca55b157a27c491fca99b523a3702cc346e",
-        "dispatched_at": "2026-07-07T13:35:56Z"
+        "prompt_sha256": "b738790a2fc13d9801de2e9ae553e848fca298e6010439752addbc5aa359cd35",
+        "dispatched_at": "2026-07-07T14:43:02Z"
       },
       "result": {
-        "agent_id": "3181fb9e-16fb-4cf2-828f-fdf403ce8c62",
+        "agent_id": "b838aae7-c16c-41ae-b463-d6454a36ab53",
         "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
         "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_01_candidate.png",
-        "selected_source_sha256": "667019c18caed083a074827085133e8068e9e615a437ee89eb1619357e572b5f",
+        "selected_source_sha256": "34102f0c514821395ce61a7dc40976410e46174ff66423511bc8a1d6208127ea",
         "final_image": "origin_image/slide_01.png",
-        "final_image_sha256": "667019c18caed083a074827085133e8068e9e615a437ee89eb1619357e572b5f",
+        "final_image_sha256": "34102f0c514821395ce61a7dc40976410e46174ff66423511bc8a1d6208127ea",
         "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
         "expected_backend_labels": [
           "scripts/image_gen.py --backend auto (codex-oauth)",
           "scripts/image_gen.py"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "封面已成功生成，包含麗山高中照片，文字與配色符合科技領航專業風",
-        "recorded_at": "2026-07-07T13:38:22Z"
+        "qa_note": "封面重新生成成功，已刪除中學組特優作品字樣",
+        "recorded_at": "2026-07-07T14:43:59Z"
       },
       "blocker": null
     },
@@ -96,7 +96,7 @@
     {
       "slide_id": "slide_03",
       "number": 3,
-      "title": "壹、緒論與背景 (分區過渡頁)",
+      "title": "壹、緒論與背景",
       "job": "prompts/slide_03.json",
       "out": "origin_image/slide_03.png",
       "input_images": [],
@@ -105,27 +105,27 @@
       "expected_generation_mode": "generate",
       "status": "recorded",
       "dispatch": {
-        "agent_id": "b3b6797e-034a-4bd9-869e-9b854515d70f",
+        "agent_id": "68200032-56ce-4952-87e0-049bbc553f05",
         "agent_nickname": null,
         "prompt": "prompts/slide_03.json",
-        "prompt_sha256": "b35293daf21661a4039eb38de1cbf5ef54709695262161ee5f2dc2d5688a37e1",
-        "dispatched_at": "2026-07-07T13:35:56Z"
+        "prompt_sha256": "a11012a810f29db9829f817caada97083fc7534ba5a9c6fd1ea50332bca8e49f",
+        "dispatched_at": "2026-07-07T14:43:02Z"
       },
       "result": {
-        "agent_id": "b3b6797e-034a-4bd9-869e-9b854515d70f",
+        "agent_id": "68200032-56ce-4952-87e0-049bbc553f05",
         "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
         "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_03_candidate.png",
-        "selected_source_sha256": "04136ad56586811fbf58239721115ba9370dc8f0aa643eeb39f98609d38013dd",
+        "selected_source_sha256": "5a4bdc624e4a6fd7182d797f5a5dd46dd04a46fc4fafeb42a794f534a6ba5689",
         "final_image": "origin_image/slide_03.png",
-        "final_image_sha256": "04136ad56586811fbf58239721115ba9370dc8f0aa643eeb39f98609d38013dd",
+        "final_image_sha256": "5a4bdc624e4a6fd7182d797f5a5dd46dd04a46fc4fafeb42a794f534a6ba5689",
         "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
         "expected_backend_labels": [
           "scripts/image_gen.py --backend auto (codex-oauth)",
           "scripts/image_gen.py"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "過渡頁標題與副標題繁體中文清晰無誤，排版層次分明",
-        "recorded_at": "2026-07-07T13:37:39Z"
+        "qa_note": "緒論章首頁重新生成成功，無分區過渡頁字樣",
+        "recorded_at": "2026-07-07T14:43:42Z"
       },
       "blocker": null
     },
@@ -534,7 +534,7 @@
     {
       "slide_id": "slide_15",
       "number": 15,
-      "title": "貳、研究方法與實施歷程 (分區過渡頁)",
+      "title": "貳、研究方法與實施歷程",
       "job": "prompts/slide_15.json",
       "out": "origin_image/slide_15.png",
       "input_images": [],
@@ -543,27 +543,27 @@
       "expected_generation_mode": "generate",
       "status": "recorded",
       "dispatch": {
-        "agent_id": "69b1a419-d087-4e40-ae46-00e97fb48ce0",
+        "agent_id": "b91da622-c7c1-4fec-a8e7-1173898a730d",
         "agent_nickname": null,
         "prompt": "prompts/slide_15.json",
-        "prompt_sha256": "c7b084e46406b42caa85704c0dc080dd51a138bd034727dd0065ee1e15044140",
-        "dispatched_at": "2026-07-07T13:39:41Z"
+        "prompt_sha256": "1a8e0247b3a4532b5474e02a1df9321b999aadb634f872306f45504f17b7f317",
+        "dispatched_at": "2026-07-07T14:43:02Z"
       },
       "result": {
-        "agent_id": "69b1a419-d087-4e40-ae46-00e97fb48ce0",
+        "agent_id": "b91da622-c7c1-4fec-a8e7-1173898a730d",
         "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
         "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_15_candidate.png",
-        "selected_source_sha256": "52128b1e3c0a04b250915d88eaec35899e28e3f3afe011ba7ae7fd605c1de685",
+        "selected_source_sha256": "c206f1a690ebfc8e367bce3cefdcf173e7795e8d709ea1c4a15c5ef9d77901fc",
         "final_image": "origin_image/slide_15.png",
-        "final_image_sha256": "52128b1e3c0a04b250915d88eaec35899e28e3f3afe011ba7ae7fd605c1de685",
+        "final_image_sha256": "c206f1a690ebfc8e367bce3cefdcf173e7795e8d709ea1c4a15c5ef9d77901fc",
         "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
         "expected_backend_labels": [
           "scripts/image_gen.py --backend auto (codex-oauth)",
           "scripts/image_gen.py"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "過渡頁投影片生成成功，文字清晰",
-        "recorded_at": "2026-07-07T13:40:57Z"
+        "qa_note": "研究方法章首頁重新生成成功，無分區過渡頁字樣",
+        "recorded_at": "2026-07-07T14:43:48Z"
       },
       "blocker": null
     },
@@ -762,7 +762,7 @@
     {
       "slide_id": "slide_21",
       "number": 21,
-      "title": "參、研究結果與討論 (分區過渡頁)",
+      "title": "參、研究結果與討論",
       "job": "prompts/slide_21.json",
       "out": "origin_image/slide_21.png",
       "input_images": [],
@@ -771,27 +771,27 @@
       "expected_generation_mode": "generate",
       "status": "recorded",
       "dispatch": {
-        "agent_id": "14d52245-bdac-466b-87b0-5fe49db4e872",
+        "agent_id": "dace52e4-558f-4c41-ad85-97e874b1b94c",
         "agent_nickname": null,
         "prompt": "prompts/slide_21.json",
-        "prompt_sha256": "8a20d72dcca8f6db1edeef99f6f8d6439dd838e8cc167d134b8f858f932e4487",
-        "dispatched_at": "2026-07-07T13:41:19Z"
+        "prompt_sha256": "214ed5ea2389a2ec97cb2ca915bc88c3b87c1647202d20ea87d3d26b16c983f0",
+        "dispatched_at": "2026-07-07T14:43:02Z"
       },
       "result": {
-        "agent_id": "14d52245-bdac-466b-87b0-5fe49db4e872",
+        "agent_id": "dace52e4-558f-4c41-ad85-97e874b1b94c",
         "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
         "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_21_candidate.png",
-        "selected_source_sha256": "bb1fb13334e691cd6ab8cfc3732adb7ef8854be7aab3e0980b658ee96e79687d",
+        "selected_source_sha256": "ce1fc15115078386bc3e82ea30bc4a57810f7d0efcee75187a458ae0175baca4",
         "final_image": "origin_image/slide_21.png",
-        "final_image_sha256": "bb1fb13334e691cd6ab8cfc3732adb7ef8854be7aab3e0980b658ee96e79687d",
+        "final_image_sha256": "ce1fc15115078386bc3e82ea30bc4a57810f7d0efcee75187a458ae0175baca4",
         "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
         "expected_backend_labels": [
           "scripts/image_gen.py --backend auto (codex-oauth)",
           "scripts/image_gen.py"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "過渡頁投影片生成成功，排版清晰無誤",
-        "recorded_at": "2026-07-07T13:42:28Z"
+        "qa_note": "結果與討論章首頁重新生成成功，無分區過渡頁字樣",
+        "recorded_at": "2026-07-07T14:43:38Z"
       },
       "blocker": null
     },
@@ -1213,7 +1213,7 @@
     {
       "slide_id": "slide_33",
       "number": 33,
-      "title": "肆、三合一創新模式之實踐成效 (分區過渡頁)",
+      "title": "肆、三合一創新模式之實踐成效",
       "job": "prompts/slide_33.json",
       "out": "origin_image/slide_33.png",
       "input_images": [],
@@ -1222,27 +1222,27 @@
       "expected_generation_mode": "generate",
       "status": "recorded",
       "dispatch": {
-        "agent_id": "bf5a9f33-5d9b-48ab-a837-09ffd2beaf13",
+        "agent_id": "b2db1f33-6d94-45ee-841d-9e98618c71a6",
         "agent_nickname": null,
         "prompt": "prompts/slide_33.json",
-        "prompt_sha256": "50891ca6e43591aec9af8dec20f735bb5e5b8d49db11a3be801faac1c53639c4",
-        "dispatched_at": "2026-07-07T13:45:08Z"
+        "prompt_sha256": "006f3834741a1735442158bcdf23f9ee59677b420c2353ee5209b2929d2064b8",
+        "dispatched_at": "2026-07-07T14:43:02Z"
       },
       "result": {
-        "agent_id": "bf5a9f33-5d9b-48ab-a837-09ffd2beaf13",
+        "agent_id": "b2db1f33-6d94-45ee-841d-9e98618c71a6",
         "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
         "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_33_candidate.png",
-        "selected_source_sha256": "98e01bcc7ce6a678684e7f60df54a0580ad131c7e8d3615bfdeda97799e5cd22",
+        "selected_source_sha256": "ca6401e743933225d1c0fadb4918f42bf979848c66a157afc409b03946a6a7aa",
         "final_image": "origin_image/slide_33.png",
-        "final_image_sha256": "98e01bcc7ce6a678684e7f60df54a0580ad131c7e8d3615bfdeda97799e5cd22",
+        "final_image_sha256": "ca6401e743933225d1c0fadb4918f42bf979848c66a157afc409b03946a6a7aa",
         "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
         "expected_backend_labels": [
           "scripts/image_gen.py --backend auto (codex-oauth)",
           "scripts/image_gen.py"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "實踐成效過渡頁投影片生成成功，排版清晰",
-        "recorded_at": "2026-07-07T13:46:22Z"
+        "qa_note": "實踐成效章首頁重新生成成功，無分區過渡頁字樣",
+        "recorded_at": "2026-07-07T14:43:40Z"
       },
       "blocker": null
     },
@@ -1604,7 +1604,7 @@
     {
       "slide_id": "slide_43",
       "number": 43,
-      "title": "伍、實踐省思與未來展望 (分區過渡頁)",
+      "title": "伍、實踐省思與未來展望",
       "job": "prompts/slide_43.json",
       "out": "origin_image/slide_43.png",
       "input_images": [],
@@ -1613,27 +1613,27 @@
       "expected_generation_mode": "generate",
       "status": "recorded",
       "dispatch": {
-        "agent_id": "6e096b02-4460-4994-af89-eb3cb7b788aa",
+        "agent_id": "2321580e-10b1-42fe-a83b-3ef7175c8b94",
         "agent_nickname": null,
         "prompt": "prompts/slide_43.json",
-        "prompt_sha256": "eefadf58991a71331ffd1052c753517995fefa598bab71535ae022a2a3b18510",
-        "dispatched_at": "2026-07-07T13:48:24Z"
+        "prompt_sha256": "9824883a077b6bf741e3c1cb61cc59a94cc24720ee42a86c87561295e1fe1468",
+        "dispatched_at": "2026-07-07T14:43:02Z"
       },
       "result": {
-        "agent_id": "6e096b02-4460-4994-af89-eb3cb7b788aa",
+        "agent_id": "2321580e-10b1-42fe-a83b-3ef7175c8b94",
         "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
         "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_43_candidate.png",
-        "selected_source_sha256": "d388910c6e1896ca928b448630ffdfde2d7284cacf0db82cb7523601ec0d658e",
+        "selected_source_sha256": "3a1031f229e674bd8fbbfbcdd35a95b940eb0b7a6c6cdeb072a93248ab060b3f",
         "final_image": "origin_image/slide_43.png",
-        "final_image_sha256": "d388910c6e1896ca928b448630ffdfde2d7284cacf0db82cb7523601ec0d658e",
+        "final_image_sha256": "3a1031f229e674bd8fbbfbcdd35a95b940eb0b7a6c6cdeb072a93248ab060b3f",
         "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
         "expected_backend_labels": [
           "scripts/image_gen.py --backend auto (codex-oauth)",
           "scripts/image_gen.py"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "問卷統計投影片生成成功，排版清晰符合範本",
-        "recorded_at": "2026-07-07T13:49:29Z"
+        "qa_note": "省思與展望章首頁重新生成成功，無分區過渡頁字樣",
+        "recorded_at": "2026-07-07T14:43:50Z"
       },
       "blocker": null
     },
@@ -1716,5 +1716,5 @@
       "blocker": null
     }
   ],
-  "updated_at": "2026-07-07T14:14:47Z"
+  "updated_at": "2026-07-07T14:43:59Z"
 }

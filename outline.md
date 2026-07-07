@@ -23,7 +23,7 @@
   - 伍、實踐省思與未來展望：精緻化策略與永續傳承建議
 - Layout role: agenda
 
-## Slide 3: 壹、緒論與背景 (分區過渡頁)
+## Slide 3: 壹、緒論與背景
 - Title: 壹、緒論與背景
 - Subtitle: 科學特色辦學長期存在的困境與變革契機
 - Layout role: section divider
@@ -125,7 +125,7 @@
   - 行政任務：建構分享場域與平台，使經驗能在人員異動中永續傳承
 - Layout role: architecture
 
-## Slide 15: 貳、研究方法與實施歷程 (分區過渡頁)
+## Slide 15: 貳、研究方法與實施歷程
 - Title: 貳、研究方法與實施歷程
 - Subtitle: 行動研究設計與教育旅行模式歷史演進
 - Layout role: section divider
@@ -179,7 +179,7 @@
   - 設計邏輯：確保研究具競爭力、激勵平日科研風氣、並維護國家與麗山校譽
 - Layout role: data evidence
 
-## Slide 21: 參、研究結果與討論 (分區過渡頁)
+## Slide 21: 參、研究結果與討論
 - Title: 參、研究結果與討論
 - Subtitle: 行政領航五力模型與校本課程國際化
 - Layout role: section divider
@@ -301,7 +301,7 @@
   - Slide 32 multi-image collage; strict input asset; preserve layout and photos
 
     ![Collage 32](assets/page_17_collage.png)
-## Slide 33: 肆、三合一創新模式之實踐成效 (分區過渡頁)
+## Slide 33: 肆、三合一創新模式之實踐成效
 - Title: 肆、三合一創新模式之實踐成效
 - Subtitle: 競賽、交流、參訪三合一模式實證分析
 - Layout role: section divider
@@ -409,7 +409,7 @@
   - Slide 42 multi-image collage; strict input asset; preserve layout and photos
 
     ![Collage 42](assets/page_27_collage.png)
-## Slide 43: 伍、實踐省思與未來展望 (分區過渡頁)
+## Slide 43: 伍、實踐省思與未來展望
 - Title: 伍、實踐省思與未來展望
 - Subtitle: 行動研究省思與未來優化策略
 - Layout role: section divider
