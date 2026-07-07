@@ -1415,27 +1415,27 @@
       "expected_generation_mode": "edit",
       "status": "recorded",
       "dispatch": {
-        "agent_id": "24443e5e-4858-4e5e-a23b-0b0947867f31",
+        "agent_id": "91276674-2507-423d-9aae-4aeb6214995e",
         "agent_nickname": null,
         "prompt": "prompts/slide_38.json",
         "prompt_sha256": "57cde0b3d01e6e389b40b0502da97452f42d3260f7b30a9cafd1a22508915e13",
-        "dispatched_at": "2026-07-07T13:46:27Z"
+        "dispatched_at": "2026-07-07T15:01:47Z"
       },
       "result": {
-        "agent_id": "24443e5e-4858-4e5e-a23b-0b0947867f31",
+        "agent_id": "91276674-2507-423d-9aae-4aeb6214995e",
         "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
         "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_38_candidate.png",
-        "selected_source_sha256": "40abf4dcb5051520784079ffa163bf0c89ac2acac7ac1d42bc8fe87c80197f56",
+        "selected_source_sha256": "66db6b670a84739f3e22e03bdf71de035ff1321a29bf21840072284e449dad7f",
         "final_image": "origin_image/slide_38.png",
-        "final_image_sha256": "40abf4dcb5051520784079ffa163bf0c89ac2acac7ac1d42bc8fe87c80197f56",
+        "final_image_sha256": "66db6b670a84739f3e22e03bdf71de035ff1321a29bf21840072284e449dad7f",
         "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
         "expected_backend_labels": [
           "scripts/image_gen.py --backend auto (codex-oauth)",
           "scripts/image_gen.py"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "東京科學景點參訪投影片生成成功，9圖拼貼完整保留",
-        "recorded_at": "2026-07-07T13:48:04Z"
+        "qa_note": "第三十八頁左側置換為報告書中真實九宮格實拍圖成功",
+        "recorded_at": "2026-07-07T15:36:41Z"
       },
       "blocker": null
     },
@@ -1535,27 +1535,27 @@
       "expected_generation_mode": "edit",
       "status": "recorded",
       "dispatch": {
-        "agent_id": "bc9e69c8-538c-4677-a13a-3111119f47cc",
+        "agent_id": "0604dae3-0b8a-42fb-b1a6-4fa261c5ef7b",
         "agent_nickname": null,
         "prompt": "prompts/slide_41.json",
         "prompt_sha256": "5bf30b845bf8342437fb8ff8c431ad2417506f7c087fa02cac08721b33eb9860",
-        "dispatched_at": "2026-07-07T13:47:40Z"
+        "dispatched_at": "2026-07-07T15:20:34Z"
       },
       "result": {
-        "agent_id": "bc9e69c8-538c-4677-a13a-3111119f47cc",
+        "agent_id": "0604dae3-0b8a-42fb-b1a6-4fa261c5ef7b",
         "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
         "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_41_candidate.png",
-        "selected_source_sha256": "dec70d8d4990d7fb43fcad2297c08d1cf716e5ff363ce4de349c48e8b73c77d2",
+        "selected_source_sha256": "ad8a551e684d32f2c12d86c91705181029fc0d31f12259f23c08e4b8a68cf09e",
         "final_image": "origin_image/slide_41.png",
-        "final_image_sha256": "dec70d8d4990d7fb43fcad2297c08d1cf716e5ff363ce4de349c48e8b73c77d2",
+        "final_image_sha256": "ad8a551e684d32f2c12d86c91705181029fc0d31f12259f23c08e4b8a68cf09e",
         "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
         "expected_backend_labels": [
           "scripts/image_gen.py --backend auto (codex-oauth)",
           "scripts/image_gen.py"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "科學競賽能力成果投影片生成成功，6圖拼貼完整保留",
-        "recorded_at": "2026-07-07T13:49:49Z"
+        "qa_note": "第四十一頁左側置換為報告書中真實獲獎表成功",
+        "recorded_at": "2026-07-07T15:21:56Z"
       },
       "blocker": null
     },
@@ -1716,5 +1716,5 @@
       "blocker": null
     }
   ],
-  "updated_at": "2026-07-07T14:58:16Z"
+  "updated_at": "2026-07-07T15:36:41Z"
 }
