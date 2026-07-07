@@ -573,33 +573,39 @@
       "title": "行動研究方法與研究場域人員",
       "job": "prompts/slide_16.json",
       "out": "origin_image/slide_16.png",
-      "input_images": [],
+      "input_images": [
+        {
+          "path": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/assets/page_16_campus.jpg",
+          "role": "麗山高中紅磚大樓實景照片",
+          "fidelity": "preserve details and place on the right side of the slide layout"
+        }
+      ],
       "style_reference_images": [],
       "requires_context_images": false,
-      "expected_generation_mode": "generate",
+      "expected_generation_mode": "edit",
       "status": "recorded",
       "dispatch": {
-        "agent_id": "9817fbf9-3791-4259-abde-bb63eb86f268",
+        "agent_id": "996405d1-a18b-4e62-b95c-e3dc788c5267",
         "agent_nickname": null,
         "prompt": "prompts/slide_16.json",
-        "prompt_sha256": "322f0f37192dd708deaaf3bbef288f162f38fcdd7d372e12489f0dae75b64cf5",
-        "dispatched_at": "2026-07-07T13:39:41Z"
+        "prompt_sha256": "b129b3daded8d21991d82f30d7976fa65308b629d239c8e7742f9d71da6c4943",
+        "dispatched_at": "2026-07-07T14:50:38Z"
       },
       "result": {
-        "agent_id": "9817fbf9-3791-4259-abde-bb63eb86f268",
+        "agent_id": "996405d1-a18b-4e62-b95c-e3dc788c5267",
         "backend_used": "scripts/image_gen.py --backend auto (codex-oauth)",
         "selected_source": "/Users/froglssh/Downloads/lssh_intl_edu_ppt/drafts/slide_16_candidate.png",
-        "selected_source_sha256": "269ad48fd328e3540568eb49eb5b83145e33e03377a8f0d31faeb92fbea62109",
+        "selected_source_sha256": "660a2563a17456fee623580eb62b048f9ab963cc70b54d76c87759636e4ab1f4",
         "final_image": "origin_image/slide_16.png",
-        "final_image_sha256": "269ad48fd328e3540568eb49eb5b83145e33e03377a8f0d31faeb92fbea62109",
+        "final_image_sha256": "660a2563a17456fee623580eb62b048f9ab963cc70b54d76c87759636e4ab1f4",
         "expected_backend": "scripts/image_gen.py --backend auto (codex-oauth)",
         "expected_backend_labels": [
           "scripts/image_gen.py --backend auto (codex-oauth)",
           "scripts/image_gen.py"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "成功生成三合一創新模式整體架構模型圖，文字清晰無亂碼",
-        "recorded_at": "2026-07-07T13:41:12Z"
+        "qa_note": "第十六頁右側置換為用戶提供的行政大樓實拍圖成功",
+        "recorded_at": "2026-07-07T14:52:06Z"
       },
       "blocker": null
     },
@@ -1716,5 +1722,5 @@
       "blocker": null
     }
   ],
-  "updated_at": "2026-07-07T14:43:59Z"
+  "updated_at": "2026-07-07T14:52:06Z"
 }
