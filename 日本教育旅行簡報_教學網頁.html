@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>行政領航驅動校本專題國際化：「競賽、交流、參訪」三合一創新模式的國際教育旅行</title>
+<style>
+:root{
+  --bg:#f4f5f7; --panel:#ffffff; --text:#1a1a1a; --sub:#4a4a4a;
+  --accent:#2563eb; --accent2:#1d4ed8; --border:#e2e5ea; --shadow:rgba(0,0,0,.10);
+  --barbg:#ffffff; --thumbbg:#eceef2; --thumbactive:#2563eb;
+}
+html[data-theme="dark"]{
+  --bg:#0d0f14; --panel:#161a22; --text:#f3f4f6; --sub:#c2c7d0;
+  --accent:#60a5fa; --accent2:#3b82f6; --border:#2a2f3a; --shadow:rgba(0,0,0,.5);
+  --barbg:#12151c; --thumbbg:#1f2430; --thumbactive:#60a5fa;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",system-ui,sans-serif;
+  background:var(--bg); color:var(--text);
+  height:100vh; display:flex; flex-direction:column; overflow:hidden;
+  transition:background .3s,color .3s;
+}
+/* ---- Top bar ---- */
+header{
+  display:flex; align-items:center; gap:14px; padding:12px 20px;
+  background:var(--barbg); border-bottom:1px solid var(--border);
+  box-shadow:0 2px 10px var(--shadow); z-index:20; flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:12px;margin-right:auto}
+.logo{
+  width:40px;height:40px;border-radius:11px;flex:none;
+  background:linear-gradient(135deg,#2563eb,#7c3aed);
+  display:flex;align-items:center;justify-content:center;font-size:22px;
+}
+h1{font-size:22px;font-weight:800;letter-spacing:.5px;line-height:1.1}
+.subttl{font-size:12px;color:var(--sub);font-weight:500}
+.controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.btn{
+  border:1px solid var(--border); background:var(--panel); color:var(--text);
+  padding:9px 15px; border-radius:10px; font-size:14px; font-weight:600;
+  cursor:pointer; display:inline-flex; align-items:center; gap:7px;
+  transition:transform .12s,background .2s,border-color .2s;
+}
+.btn:hover{transform:translateY(-1px);border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.sec-input{
+  display:flex;align-items:center;gap:6px;font-size:13px;color:var(--sub);
+  background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:6px 11px;
+}
+.sec-input input{
+  width:52px;border:none;background:transparent;color:var(--text);
+  font-size:15px;font-weight:700;text-align:center;outline:none;
+}
+.chk{
+  display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--sub);
+  background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:7px 12px;cursor:pointer;user-select:none;
+}
+.chk input{width:16px;height:16px;accent-color:var(--accent);cursor:pointer}
+.sec-input select{
+  border:none;background:transparent;color:var(--text);
+  font-size:13px;font-weight:700;outline:none;cursor:pointer;max-width:170px;
+}
+.sec-input select option{color:#111}
+/* ---- Main split ---- */
+main{flex:1;display:flex;min-height:0;position:relative}
+.slide-pane{
+  flex:0 0 66%; max-width:66%; background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  padding:26px; position:relative; overflow:hidden;
+}
+.slide-pane img{
+  max-width:100%;max-height:100%;object-fit:contain;
+  border-radius:12px; box-shadow:0 10px 34px var(--shadow);
+  background:#fff;
+}
+.text-pane{
+  flex:1; min-width:0; background:var(--panel); border-left:1px solid var(--border);
+  padding:24px 26px; overflow-y:auto; display:flex;flex-direction:column;
+}
+.pagechip{
+  align-self:flex-start; font-size:12px; font-weight:700; color:#fff;
+  background:var(--accent); padding:3px 12px; border-radius:20px; margin-bottom:12px;
+}
+.text-pane h2{
+  font-size:22px; font-weight:800; line-height:1.3; margin-bottom:14px;
+  color:var(--text); border-bottom:3px solid var(--accent); padding-bottom:11px;
+}
+.text-pane p{
+  font-size:16px; line-height:1.7; color:var(--sub); margin-bottom:13px;
+  letter-spacing:.2px;
+}
+.text-pane p:last-child{margin-bottom:0}
+/* Nav arrows over slide */
+.nav-arrow{
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:48px;height:48px;border-radius:50%;border:none; cursor:pointer;
+  background:rgba(37,99,235,.85); color:#fff; font-size:24px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.3); transition:background .2s,transform .12s; z-index:6;
+}
+.nav-arrow:hover{background:var(--accent2);transform:translateY(-50%) scale(1.08)}
+.nav-arrow.prev{left:16px}
+.nav-arrow.next{right:16px}
+/* ---- Thumbnail strip ---- */
+.filmstrip{
+  background:var(--barbg); border-top:1px solid var(--border);
+  padding:9px 12px; display:flex; align-items:center; gap:10px; z-index:15;
+}
+.strip-scroll{
+  display:flex; gap:8px; overflow-x:auto; overflow-y:hidden; padding:3px 2px 7px;
+  scroll-behavior:smooth; flex:1;
+}
+.strip-scroll::-webkit-scrollbar{height:8px}
+.strip-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
+.thumb{
+  flex:none; width:118px; height:67px; border-radius:7px; cursor:pointer;
+  border:3px solid transparent; background:var(--thumbbg); position:relative;
+  overflow:hidden; transition:border-color .15s,transform .12s;
+}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb:hover{transform:translateY(-2px)}
+.thumb.active{border-color:var(--thumbactive)}
+.thumb .tn{
+  position:absolute;left:0;bottom:0;background:rgba(0,0,0,.62);color:#fff;
+  font-size:11px;font-weight:700;padding:1px 6px;border-top-right-radius:6px;
+}
+.jump{
+  display:flex;align-items:center;gap:7px;font-size:13px;color:var(--sub);flex:none;
+}
+.jump input{
+  width:56px;padding:6px;border-radius:8px;border:1px solid var(--border);
+  background:var(--panel);color:var(--text);text-align:center;font-size:14px;font-weight:700;
+}
+/* ---- Fullscreen presentation ---- */
+#fs{
+  position:fixed;inset:0;background:#000;z-index:100;display:none;
+  align-items:center;justify-content:center;
+}
+#fs.show{display:flex}
+#fs img{max-width:100%;max-height:100%;object-fit:contain}
+.fs-ui{
+  position:fixed;top:18px;right:18px;display:flex;gap:10px;align-items:center;
+  z-index:110; opacity:.25; transition:opacity .25s;
+}
+#fs:hover .fs-ui{opacity:1}
+.fs-btn{
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#fff;
+  padding:9px 14px;border-radius:9px;font-size:14px;font-weight:600;cursor:pointer;
+  backdrop-filter:blur(6px);
+}
+.fs-btn:hover{background:rgba(255,255,255,.28)}
+.fs-count{
+  position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
+  color:#fff;background:rgba(0,0,0,.5);padding:6px 18px;border-radius:20px;
+  font-size:15px;font-weight:700;z-index:110;opacity:.3;transition:opacity .25s;
+}
+#fs:hover .fs-count{opacity:1}
+.fs-arrow{
+  position:fixed;top:50%;transform:translateY(-50%);width:56px;height:56px;border-radius:50%;
+  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);color:#fff;
+  font-size:28px;cursor:pointer;z-index:110;opacity:.2;transition:opacity .25s;
+  display:flex;align-items:center;justify-content:center;
+}
+#fs:hover .fs-arrow{opacity:.85}
+.fs-arrow.p{left:22px}.fs-arrow.n{right:22px}
+/* ---- Footer ---- */
+footer{
+  background:var(--barbg);border-top:1px solid var(--border);
+  text-align:center;padding:8px;font-size:13px;color:var(--sub);font-weight:600;letter-spacing:.5px;
+}
+footer b{color:var(--accent);font-weight:800}
+/* ---- Responsive ---- */
+@media(max-width:860px){
+  main{flex-direction:column}
+  .slide-pane{flex:0 0 52%;max-width:100%;padding:14px}
+  .text-pane{border-left:none;border-top:1px solid var(--border);padding:16px}
+  .text-pane h2{font-size:19px}
+  .text-pane p{font-size:15px;line-height:1.65}
+  h1{font-size:18px}
+  .thumb{width:92px;height:52px}
+}
+.playing-badge{
+  position:absolute;top:16px;left:16px;background:rgba(37,99,235,.9);color:#fff;
+  padding:5px 13px;border-radius:20px;font-size:13px;font-weight:700;z-index:6;display:none;
+}
+.playing-badge.show{display:block}
+</style>
+</head>
+<body data-theme="light">
+<header>
+  <div class="brand">
+    <div class="logo">✈️</div>
+    <div>
+      <h1>行政領航驅動校本專題國際化：「競賽、交流、參訪」三合一創新模式的國際教育旅行</h1>
+      <div class="subttl">日本教育旅行簡報 · 圖文對照瀏覽</div>
+    </div>
+  </div>
+  <div class="controls">
+    <div class="sec-input" title="設定自動播放秒數">
+      <span>秒數</span><input id="secIn" type="number" min="1" max="120" value="8"><span>秒</span>
+    </div>
+    <button class="btn" id="autoBtn">▶ 自動播放</button>
+    <label class="chk" title="開啟後，自動播放會唸完整頁旁白才換頁；關閉則依上方秒數換頁">
+      <input type="checkbox" id="waitSpeak" checked> 朗讀完才換頁
+    </label>
+    <div class="sec-input" title="選擇朗讀語音（清單依你電腦已安裝的語音而定，建議挑「Google」或加強版語音最自然）">
+      <span>語音</span><select id="voiceSel"></select>
+    </div>
+    <div class="sec-input" title="設定朗讀語速">
+      <span>語速</span><input id="rateIn" type="number" min="0.5" max="2" step="0.05" value="0.95"><span>×</span>
+    </div>
+    <div class="sec-input" title="設定音調高低（1 為原音，低一點較沉穩、高一點較活潑）">
+      <span>音調</span><input id="pitchIn" type="number" min="0.5" max="1.5" step="0.05" value="1.0"><span>♪</span>
+    </div>
+    <button class="btn" id="speakBtn">🔊 朗讀旁白</button>
+    <button class="btn primary" id="fsBtn">⛶ 全螢幕播放</button>
+    <button class="btn" id="themeBtn">🌙 深色</button>
+  </div>
+</header>
+
+<main>
+  <section class="slide-pane">
+    <div class="playing-badge" id="badge">自動播放中…</div>
+    <button class="nav-arrow prev" id="prev">‹</button>
+    <img id="mainImg" src="" alt="投影片">
+    <button class="nav-arrow next" id="next">›</button>
+  </section>
+  <section class="text-pane" id="textPane">
+    <span class="pagechip" id="chip">第 1 / 70 頁</span>
+    <h2 id="title"></h2>
+    <div id="body"></div>
+  </section>
+</main>
+
+<div class="filmstrip">
+  <div class="jump">
+    <span>跳頁</span>
+    <input id="jumpIn" type="number" min="1" max="70" value="1">
+    <span>/ 70</span>
+  </div>
+  <div class="strip-scroll" id="strip"></div>
+</div>
+
+<footer>臺北市立麗山高中 · <b>林獻升老師</b></footer>
+
+<!-- Fullscreen -->
+<div id="fs">
+  <button class="fs-arrow p" id="fsPrev">‹</button>
+  <img id="fsImg" src="" alt="">
+  <button class="fs-arrow n" id="fsNext">›</button>
+  <div class="fs-ui">
+    <button class="fs-btn" id="fsSpeak">🔊 朗讀旁白</button>
+    <button class="fs-btn" id="fsAuto">▶ 自動播放</button>
+    <button class="fs-btn" id="fsExit">✕ 離開全螢幕</button>
+  </div>
+  <div class="fs-count" id="fsCount"></div>
+</div>
+
+<script>
+const SLIDES = [{"n": 1, "title": "封面", "paras": ["麗山高中從創校就以科學教育為特色，而這份簡報想回答的，是一個放在心裡很久的問題——怎麼讓學生辛苦做出來的科學專題，走上更寬廣的國際舞台。左邊的主標把答案濃縮成一句話：用「競賽、交流、參訪」三合一的方式，把校本專題帶出國。", "底下那一排小圖示，其實是後面會反覆出現的關鍵字：科學移動力、行政領航五力模型、麗山智匯、ESP 學術英語、減法哲學、都市生存演練。先掃過一眼有印象，往下看就會慢慢兜起來。"]}, {"n": 2, "title": "簡報大綱", "paras": ["整份內容一共六個部分，順著看脈絡會很清楚。", "從辦學困境與動機談起，接著是研究方法與實施歷程，再進到核心發現「行政領航五力模型」，然後是專題課程的國際化鷹架，之後用競賽、交流、參訪三個維度看實際成效，最後收在省思與未來展望。"]}, {"n": 3, "title": "壹、緒論與背景", "paras": ["先從背景說起。麗山是一所科學特色學校，二十多年下來累積了不少科研能量，可是在這看似亮眼的過程裡，其實藏著一個長期存在、平常不太被講出來的隱形困境。", "下一頁開始，就要把這個困境一層一層攤開來看。"]}, {"n": 4, "title": "科學教育特色與專題研究校本課程", "paras": ["麗山的底子，要從民國 89 年創校講起。學校很早就把「研究方法」和「專題研究」列為每個學生的必修，也就是說，進到麗山的孩子，都要經歷長達一年半的科學探究，在實驗室裡實實在在地磨數據、寫報告。", "多年下來競賽成績很好，但問題也在這裡浮現——很多學生的專題做得很出色，卻因為傳統管道有限，幾乎沒有機會走出臺灣、站上國際舞台發表。這個落差，正是後面一切改變的起點。"]}, {"n": 5, "title": "辦學困境的具體呈現：代表權邊緣化", "paras": ["困境的關鍵，卡在臺灣國際科展（TISF）這道獨木橋——它一直是高中生取得國家代表權、出國參賽的主要通道。", "麗山早年有過一段輝煌，多次代表國家出征美國 ISEF 還拿下首獎。但 2018 年之後，表現進入平穩期，得獎多半落在三、四等。專題做得不差，卻因為獎項等級卡住，拿不到代表權，有時只能被薦送到 ISEF 以外的次要賽事。孩子的努力，就這樣少了更大的舞台。"]}, {"n": 6, "title": "近年參加台灣國際科展（TISF）統計", "paras": ["表格把近幾年的數字攤開來，落差看得很清楚。", "2002 到 2016 年間，麗山在工程與數學多次拿一等獎，得以前往美國 ISEF；但 2018 年起，這些學科的獲獎等級大多停在三、四等，對應的出國代表權欄位幾乎都寫著「無」。2024、2025 年雖然有獎，因為是三等獎，代表權只分到突尼西亞；到 2026 年生物化學拿三等獎，更是完全沒有出國機會。數據講得很白：靠國家推薦出國這條老路，已經走到邊緣化的地步。"]}, {"n": 7, "title": "困境背後的結構性原因分析", "paras": ["會走到這一步，背後有兩個結構性原因。", "一是 108 課綱上路後，全國高中都開了「探究與實作」和專題研究，麗山過去獨步全國的特色被普遍複製，競爭一下子變得非常激烈。二是 TISF 代表權本來就僧多粥少，每年全臺灣大概只選得出二十件作品。合起來看，其實不是麗山的孩子退步了，而是整個遊戲規則變了——繼續被動等薦送，能出去的永遠只有極少數。"]}, {"n": 8, "title": "遊戲規則改變：需要新路徑", "paras": ["既然傳統窄門走不通，觀念就得先轉個彎：學校行政不能再只是被動等官方經費，而要主動替願意付出的學生開一條「主動出國」的新路。", "而且這條路不是為了少數頂尖菁英——而是讓更多在實驗室默默做專題的孩子，只要通過學校甄選與培訓，就能有尊嚴地站上像日本筑波 Science Edge 這樣有公信力的科學舞台。"]}, {"n": 9, "title": "戰略轉型：走向「主動出國」的藍海策略", "paras": ["轉型的思考，可以拆成四個層面。", "思維上先做主動翻轉，從等補助改成學校主動爭取預算加上家長自費，讓出國人數從一兩人擴大到每年三、四十人；策略上跳脫紅海，直接帶孩子到亞太頂尖的科學舞台同場競技；課程上以發表深化，因為要對外發表，學生平時做研究自然會更嚴謹。而最底層的一件事，是機會平權——只要孩子肯為研究付出，學校就替他搭好舞台。"]}, {"n": 10, "title": "國際教育 2.0 政策下的雙軌轉型", "paras": ["這樣的作法，剛好接得上國家政策。教育部推「國際教育白皮書 2.0」，強調國際教育要課程化、在地化、永續化，對麗山正是契機。", "行政團隊的體認很清楚：不能再辦一趟「不出錯的觀光旅行」，而要把整趟旅程定義成「校本專題課程的海外實踐」。也因此重新界定了麗山專屬的「科學移動力」——能用學術英語做科學論證、跟跨國夥伴對等交流、把在地研究連上全球永續議題。"]}, {"n": 11, "title": "四項策略目標", "paras": ["方向確立後，落成四個具體的策略目標。", "以校本專題為核心，把在地研究和聯合國 SDGs 對接、轉成國際對話；在真實的異國情境裡培養學生自主生存與解決問題的能力；營造尊重多元文化的全球公民校園；再透過與日本名校交流、締結姊妹校，深化跨國合作、推動學校品牌永續。這四項，會和簡報後半的成效一一對上。"]}, {"n": 12, "title": "研究目的與待答問題", "paras": ["整份研究要回答的問題，聚焦在四個目的。", "一是解構傳統教育行政的角色困境，建構出「行政領航五力模型」；二是剖析專題課程如何透過行政創新和三合一模式，形成在地深耕又能全球發聲的迴路；三是分析這套模式實施三個學年後，對科學人才、ESP 學術英語和全球公民素養的具體成效；四是歸納成功要素，給其他學校做參考。"]}, {"n": 13, "title": "文獻探討 1：STEM 國際教育趨勢與行政轉型", "paras": ["研究的理論基礎，先靠兩個。", "Bybee 等人談的 STEM 素養，強調高層次科學素養要能跨領域整合、在真實情境應用，還要對接全球 SDGs——這和日本 Science Edge 要求作品連結 SDGs 的賽制正好對上。Glatthorn 的課程領導理論，則主張要打破行政和教學的藩籬，在組織、預算、人員上全面對接課程目標。這也正是把教育旅行從學務處的例行活動，轉成教務處主導校訂課程的學術依據。"]}, {"n": 14, "title": "文獻探討 2：SECI 知識螺旋", "paras": ["第三個支柱，是 Nonaka 的 SECI 知識螺旋。", "學校行政和教學的經驗，很多是個人的「隱性經驗」，沒有系統性外化，往往承辦人一調動就流失了。同樣地，學生在交流現場親眼看到日本學生在實驗室的職人紀律，那種震撼也是一種隱性知識。行政團隊要做的，就是建一套知識管理機制，透過「麗山智匯」平台把這些隱性經驗，轉成學校能傳承的顯性資產。"]}, {"n": 15, "title": "貳、研究方法與實施歷程", "paras": ["接下來這一段，要談的是麗山怎麼從傳統的文化教育旅行，一步一步滾動修正、優化成現在的進化模式。", "可以把它當成一條時間軸的起點，從這裡開始往下走。"]}, {"n": 16, "title": "行動研究方法與研究場域人員", "paras": ["方法上採行動研究法，走左圖那套 Kemmis 與 McTaggart 的「規劃—行動—觀察—反省—再規劃」螺旋循環，核心問題是「行政如何引領教學，讓學生的研究和國際學術殿堂對接」。", "場域就在麗山，成員橫跨校長室、教務、學務、總務、秘書等處室主管，加上自然科與英文科教師。右邊的統計則顯示，整個歷程從 112 到 114 學年度，三年累計帶了 106 位學生赴日。"]}, {"n": 17, "title": "歷史演進：傳統模式與進化模式對比", "paras": ["把早年和近年並排，差異很明顯。", "早期 106、108 學年度偏文化與體育的軟性交流，行程多是景點觀光，培訓著重日語和國際禮儀，產出多半是中文心得。近年 112 到 114 學年度則轉向學術競技與專題輸出，師生全員參與 Science Edge，培訓包含英文論文寫作、海報設計和全英文答辯，產出是英文摘要、海報和高鑑別度的學習歷程。照片裡也看得出來——學生從台下的「觀眾」，走到了台上的「主角」。"]}, {"n": 18, "title": "進化模式實證數據：兩大時期對比表", "paras": ["表 2 把兩個時期的比較維度和教育意義並排整理，最關鍵的一點在於交流方向的翻轉。", "過去是「輸入型交流」——被動接收文化；現在是「輸出型交流」——主動展現特色高中的學術硬實力。行前培訓不再只是文化介紹，而是直接對接高二專題發表的核心素養。這樣的課程化轉型，讓教育旅行不再是一次性的消耗，而是能持續累積的國際教育資本。"]}, {"n": 19, "title": "近三年行程精緻化演進", "paras": ["三年行程怎麼一路精緻化？貫徹的是「減法哲學」——不斷把次要的拿掉，留下真正有學習價值的。", "2024 年疫後重啟，屬於廣泛接觸期，測試性地排了兩所交流校，觀光成分較重；2025 年進入聚焦精銳期，交流集中在都立科學技術高校，參訪點換成有科學探究意涵的航空科學博物館和消防防災館；2026 年是深度整合期，再精簡景點，把晴空塔和淺草寺做古今制震對照，還加了非結構化的都市自主探索。"]}, {"n": 20, "title": "學生甄選機制演進", "paras": ["參與學生怎麼選，機制也是逐年成熟。表 4 從一開始的廣納期，演進到第三年的成熟期。", "作法上，把「科展獲獎與成就」列為最優先的比序，英日語檢定通過者優先，同時把德行、服務和出缺勤納入考核。這樣設計有三個用意：確保帶去參賽的作品有國際競爭力、在校內建立正向的競賽文化誘因，以及守住團隊的常規與紀律，維護校譽與國家形象。"]}, {"n": 21, "title": "參、研究結果與討論", "paras": ["進到最核心的一段：研究結果與討論。", "底下會分兩個主題來談——主題一是「行政領航五力模型」的建構，主題二是「課程領航與學術培訓鷹架」的實踐。"]}, {"n": 22, "title": "行政領航五力模型", "paras": ["三年下來，歸納出撐起整套模式的五項能力，也就是中間這張環形圖上的「五力」。", "策略引領力提供願景，矩陣協作力打破藩籬、負責執行，知識管理力把經驗外化，財務領導力調整預算落實平權，組織學習力提供滾動修正的動能。它們不是各自獨立，而是互為因果、螺旋上升——正是這五力，讓行政角色從「後勤承辦」轉成了「課程領航」。"]}, {"n": 23, "title": "（一）策略引領力", "paras": ["五力的第一項，是策略引領力。行政創新如果沒有清楚的願景，很容易被日常公文和招標消耗掉。", "在麗山，校長沒有把出國參訪當成下放給學務處的例行公事，而是親自率隊——照片裡可以看到，出發前主持授旗、參與行前模擬評審，還在筑波大會廳替學生加油。這種高層親自參與，等於向全校釋放「這是被學校極度看重的大事」的訊號，也成了持續深化課程的內在動能。"]}, {"n": 24, "title": "（二）矩陣協作力", "paras": ["第二項是矩陣協作力。傳統高中行政是垂直的金字塔，處室各做各的。", "可是光要把報名競賽、開課培訓、出國招標、跨國聯繫串起來，垂直分工根本應付不了。於是團隊打破處室平行的藩籬，以「課程目標」為中心，成立橫向的「國際教育推動小組」，把旅行重新定位成「校訂課程的海外實踐」，讓各處室和學科教師進行高密度的雲端共筆協作。"]}, {"n": 25, "title": "國際教育推動小組之跨處室分工", "paras": ["推動小組裡，每個處室都有清楚對應的角色。", "校長是總領航者；學務處負責統籌、招標與安全；教務處對接專題課程、推動學術英文微課程；秘書室管跨國姊妹校聯繫與翻譯；總務處和會計室提供財務核銷與弱勢生全額補助的後盾；自然科與英文科教師則組成隨隊教學群，負責賽前培訓和答辯指導。各就各位、共創共好，正是整件事能順利跑起來的制度保障。"]}, {"n": 26, "title": "（三）知識管理力與「麗山智匯」平台", "paras": ["第三項是知識管理力，要解決的痛點很實際——人一走，經驗就跟著走。", "一位資深帶隊老師調職，常常會帶走「怎麼應對日本評審提問」「地鐵哪段最容易迷路」這些關鍵的隱性經驗。為此團隊建了雲端「麗山智匯」平台，把培訓教材、發表範例、危機處理 SOP 和歷屆心得，系統性地外化成標準文件。這樣下一屆承辦人能站在前人肩膀上往前走，國際教育也才有辦法永續。"]}, {"n": 27, "title": "（四）財務領導力與（五）組織學習力", "paras": ["最後兩項能力放在一起看。", "財務領導力上，跳出歷史延續編列的舊框，改用課程目標反推預算，主動編列微課程鐘點費，並全額補助弱勢學生團費。組織學習力上，把報名選才數位化、建立行程檢核 SOP、每年開賽後檢討會——像是針對 2024 學生臨場緊張，2025 就加了「魔鬼模擬評審」；針對 2025 學生熬夜改簡報，2026 就強制「賽前定稿」。一年修一年，組織才會持續長出新的生命力。"]}, {"n": 28, "title": "課程領航：校本專題之系統化期程", "paras": ["轉到主題二。表 6 這條時間軸，是麗山專題課程的完整期程。", "高一 9 到 11 月是領域探索，學探究實作方法；11 到 1 月專題初探、構思研究；高二在實驗室收集數據做專題研究；接著 2 到 4 月進入專題發表——而這段時間，剛好就是日本教育旅行。正因為時間對得上，國際交流才能深深嵌進原本的專題課程，把科學成果往國際延伸。"]}, {"n": 29, "title": "發表舞台的雙軌擴充與適性分流", "paras": ["發表舞台，從單軌變成了雙軌。", "過去學生辛苦一年半的作品，往往只能在校內體育館用中文發表；導入三合一模式後，舞台延伸到日本，分成「國內中文發表」和「國外英文發表」兩條。照片左右一對照就看得出來。這麼做不是要打造少數人的菁英特權，而是讓孩子依自己的作品屬性和英語能力，適性選最適合自己的舞台，真正做到「以學生為主體」。"]}, {"n": 30, "title": "學術培訓鷹架：20 小時模組化微課程", "paras": ["要讓學生自信站上國際舞台，靠的是表 7 這套 20 小時的培訓鷹架。", "教務處和學科教師把它分成兩大模組：「英文科學論文寫作」10 小時，練獲獎邏輯解構、摘要實戰寫作、數據視覺化；「英文論文口語發表」10 小時，練 TED 式演講、簡報語調矯正、還有魔鬼評審團的模擬答辯。等於直接把面對國際評審需要的學術防禦和英文表達能力，交到學生手上。"]}, {"n": 31, "title": "鷹架階段一：英文論文寫作與視覺敘事", "paras": ["第一階段聚焦英文摘要和海報設計。", "團隊解構了 Science Edge 官方「Startup Checklist」的三大標準，帶學生在 10 小時內把完整實驗報告濃縮成兩頁 A4 英文摘要，並對接 SDGs。海報這邊，用「好設計與壞設計」的對照範例訓練視覺動線，讓評審三秒內就抓到研究核心，最後再用模擬展場的 Gallery Walk 做同儕互評和修正。照片裡的一對一診斷、摘要寫作課，都是這階段的實戰畫面。"]}, {"n": 32, "title": "鷹架階段二：口語發表特訓與「魔鬼評審團」", "paras": ["第二階段，練的是全英語口語發表和無腳本答辯。", "英文科和自然科教師協同合作，糾正重音和眼神，還特別開了「英語 Q&A 攻防戰」，教學生在高壓下抓問題關鍵字、用避險句型爭取思考時間。出發前和日本飯店的晚上，隨隊教師組成「魔鬼評審團」做全真模擬——照片裡那些夜間特訓，其實是隱性知識傳遞最密集的時刻。學生也慢慢卸下對英語的恐懼，體會到清晰的圖表和堅實的邏輯，才是最好的答辯武器。"]}, {"n": 33, "title": "肆、三合一創新模式之實踐成效", "paras": ["有了紮實的行政領航和培訓鷹架，接下來就是驗收成果的時候。", "底下會分「競賽」「交流」「參訪」三個維度，一個一個看實踐出來的成效。"]}, {"n": 34, "title": "實踐一：競賽 — 筑波 Science Edge", "paras": ["第一個維度是競賽，主場在筑波 Science Edge——日本知名的中學生科學發表會，要求全程用英文發表和防禦。", "六天行程裡特地留了整整兩天的完整賽程，讓學生沉浸其中。大會評分明確要求作品對接 SDGs，這逼著學生跳出單純的實驗數據，把研究提升到全球永續的高度。而且大會設計了四種發表場域——大會場口頭、衛星分組、攤位海報、樓層海報，讓不同程度的學生都找得到合適的鍛鍊。"]}, {"n": 35, "title": "麗山代表性專題與 SDGs 之對接", "paras": ["表 8 整理了近年代表性專題和 SDGs 的對接，選題的多元和永續連結一目了然。", "像 2026 年衛星發表第一名的蛇類運動形態研究對接 SDGs 14 和 15；第二名的 Omega-6 脂肪酸與膠質瘤研究對接 SDGs 3；口頭發表鼓勵賞的雨水能量收集對接 SDGs 7。這也說明課程確實和國際賽事接得上，能引導學生用科學去回應真實世界的永續問題。"]}, {"n": 36, "title": "實踐二：交流 — 千葉縣立長生高校", "paras": ["第二個維度是交流，先看日本 SSH 重點學校千葉縣立長生高校。", "校方安排了穿室內鞋、管樂迎賓這類很有味道的文化沉浸；學術上則刻意打破單向聽講，設計「混合分組科學實作探究」，讓臺日學生混編、在限時壓力下用物理原理一起設計力學機關。照片裡那些圍著實驗桌腦力激盪的畫面，正說明了一件事——科學和數學的邏輯，其實是全世界最暢通的共通語言。"]}, {"n": 37, "title": "實踐二：交流 — 東京都立科學技術高校", "paras": ["另一所交流校，是東京都立科學技術高校。", "2025 年雙方正式簽了姊妹校合約，學生以全英文互相做專題簡報和海報發表，產生很好的正向同儕效應。日本學生的選題很關注在地生態和社會實用，像蟾蜍腹部識別系統，這也促使麗山學生重新想「研究的社會價值」。而日本實驗室那種嚴謹的職人精神、精準的數據要求和整齊收納，更給學生帶來不小的震撼，默默深化了他們的研究態度。"]}, {"n": 38, "title": "實踐三：參訪 — 貫徹減法哲學的場域探究", "paras": ["第三個維度是參訪，核心概念一句話：走馬看花是扼殺科學觀察的元兇。", "所以 2026 年果斷減少景點，還硬性規定知識場域「至少停留一小時」。最精彩的一段是「跨時空抗震工程對話」——前一天看淺草寺五重塔的「心柱」，隔天登上晴空塔，才發現它的核心抗震技術正是承襲自五重塔，等於上了一堂橫跨千年的力學課。墨田水族館和科學博物館也因為時間充足，學生才有辦法細讀人工海水生成、比較地質學這些資料，做真正的探究。"]}, {"n": 39, "title": "非結構化學習：東京都市自主生存演練", "paras": ["第五天下午，有一段很特別的安排——「刻意放權」。", "團隊把遊覽車和帶隊老師的保護傘拿掉，只發 Suica 卡和午餐代金，要學生分組在複雜的東京軌道交通裡自己導航、完成半天的都市生存任務。學生大多老實說搭錯過方向、迷過路、也點錯過餐，但正是在這些看似失敗的試誤裡，他們被迫啟動危機管理，學會看地圖、整合意見、跨文化溝通。短短半天，把抗壓性、決策力和國際移動的自信都拉了上來。"]}, {"n": 40, "title": "模式總對比：傳統觀光 vs 三合一學術模式", "paras": ["表 9 把兩種模式做了系統性的總對比，翻轉的幅度很清楚。", "從目標核心、行政與課程的鏈結、學生定位、交流深度到行政定位，麗山從單純的文化體驗、蜻蜓點水的交流，變成國際學術競爭、全英文專題答辯，還走進 JAXA、SSH 科技高中這類國家級科研場域做深度學習。而最關鍵的一格是最後一列——行政角色，真正從「程序執行者」升格成了「課程領航者」。"]}, {"n": 41, "title": "科學競賽能力之實證躍升", "paras": ["近三年的競賽成果，把前面講的創新落到了實績上。", "2024 年疫後重啟首年，就拿下衛星發表二等獎、三等獎和現場海報獎；2025 年再擴大，是極少數拿到 Floor Poster Award 的海外代表隊；到 2026 年因為報名端嚴格比序，成果衝上巔峰——入圍組數高達 20 組創歷史新高，還勇奪大會英文組第一名（含 20 萬日圓補助）與第二名，口頭發表也拿了鼓勵賞。三組獲獎團隊都獲大會推薦前往新加坡 GLS，舞台從臺灣、日本一路延到新加坡。"]}, {"n": 42, "title": "學生核心素養之質變", "paras": ["獎項之外，學生身上還有更深的改變。", "專業英文出現質變，高壓的學術防禦逼著學生把英語當成解決問題、捍衛論點的實用工具；生活實戰磨出人格韌性，不論是飯店裡的團隊合作、自主移動，還是沒得獎時的情緒復原，都在形塑健全的人格；出國成果再回扣成高品質的學習歷程檔案，轉化為升學資本；而賽後第一時間發官網新聞稿，也把學術榮譽變成了麗山的品牌資產。"]}, {"n": 43, "title": "伍、實踐省思與未來展望", "paras": ["行動研究最核心的精神，就是誠實面對缺失。", "在亮眼成果的背後，團隊也做了深刻的省思，並替未來提出優化建議——底下這一段，就是把不足和改進方向攤開來談。"]}, {"n": 44, "title": "行動研究省思與精緻化建議", "paras": ["改進的方向，收斂成四點。", "繼續貫徹減法哲學，在招標合約裡明定專業場域「一小時停留保障」，用深度換廣度；優化心理調適，賽前就把海報和簡報定稿，別到海外還熬夜改，賽後隔天也排點身心緩衝的行程；把跨處室協作制度化，讓小組常態運作、經驗透過「麗山智匯」傳承；再把財務領導力和教育平權綁在一起，持續爭取外部補助，確保弱勢生也有出國機會。"]}, {"n": 45, "title": "陸、結論", "paras": ["一路走下來，最想證明的其實是一件事：學校行政絕不只是後方支援，而是能驅動教學變革、接軌國際的核心引擎。", "當 108 課綱稀釋了麗山原有的專題優勢，行政團隊選擇跳出紅海、走藍海策略，開出一條不必等政府薦送的自費出國與精銳培訓管道。最後成功把過去只有一兩位菁英享有的國際舞台，擴大到每年三十多位孩子都能參與——讓科學人才培育，從金字塔頂端的菁英教育，走向普及的普惠教育。這，就是麗山用校本專題走向世界的經驗。"]}];
+const imgPath = n => `origin_image/slide_${String(n).padStart(2,'0')}.png`;
+let cur = 0;              // 0-indexed
+let autoTimer = null;     // inline autoplay
+let fsTimer = null;       // fullscreen autoplay
+
+const $ = id => document.getElementById(id);
+const mainImg=$('mainImg'), titleEl=$('title'), bodyEl=$('body'),
+      chip=$('chip'), strip=$('strip'), jumpIn=$('jumpIn'),
+      fsImg=$('fsImg'), fsCount=$('fsCount'), fs=$('fs'), badge=$('badge');
+
+// build thumbnails
+SLIDES.forEach((s,i)=>{
+  const d=document.createElement('div');
+  d.className='thumb'; d.dataset.i=i;
+  d.innerHTML=`<img loading="lazy" src="${imgPath(s.n)}"><span class="tn">${s.n}</span>`;
+  d.onclick=()=>{ go(i); };
+  strip.appendChild(d);
+});
+const thumbs=[...strip.children];
+
+function render(){
+  const s=SLIDES[cur];
+  mainImg.src=imgPath(s.n);
+  titleEl.textContent=s.title;
+  bodyEl.innerHTML=s.paras.map(p=>`<p>${p}</p>`).join('');
+  chip.textContent=`第 ${s.n} / 70 頁`;
+  jumpIn.value=s.n;
+  $('textPane').scrollTop=0;
+  thumbs.forEach((t,i)=>t.classList.toggle('active',i===cur));
+  const at=thumbs[cur];
+  if(at) at.scrollIntoView({inline:'center',block:'nearest'});
+  if(fs.classList.contains('show')){ fsImg.src=imgPath(s.n); fsCount.textContent=`${s.n} / 70`; }
+}
+function go(i){ cur=(i+SLIDES.length)%SLIDES.length; render(); if(narrating) speakCurrent(); }
+function nextS(){ go(cur+1); }
+function prevS(){ go(cur-1); }
+
+// ---- 旁白朗讀 (Web Speech API) ----
+let narrating=false, zhVoice=null, advanceTimer=null, allVoices=[];
+const synth=window.speechSynthesis;
+// 語音「自然度」評分：線上 Google、加強版、Siri、神經網路語音優先
+function voiceScore(v){
+  const n=(v.name||'')+' '+(v.voiceURI||''); let s=0;
+  if(/zh[-_]TW|zh[-_]Hant|cmn/i.test(v.lang)) s+=40;       // 繁中臺灣優先
+  else if(/^zh|zh[-_]CN|zh[-_]HK/i.test(v.lang)) s+=20;    // 其他中文次之
+  if(/google/i.test(n)) s+=30;                             // Chrome 線上 Google 語音最自然
+  if(/enhanced|premium|加強|進階|neural|natural/i.test(n)) s+=25;
+  if(/siri/i.test(n)) s+=20;
+  if(/美嘉|meijia|台湾|臺灣|taiwan/i.test(n)) s+=10;
+  return s;
+}
+function buildVoiceList(){
+  if(!synth) return;
+  allVoices=synth.getVoices();
+  // 只保留「Google 國語（臺灣）」語音
+  const gtw=allVoices.filter(v=>/google/i.test(v.name) && /zh[-_]TW|zh[-_]Hant|國語|臺灣|台灣/i.test((v.name||'')+' '+v.lang));
+  const sel=$('voiceSel');
+  sel.innerHTML='';
+  if(gtw.length){
+    gtw.forEach(v=>{
+      const o=document.createElement('option');
+      o.value=allVoices.indexOf(v);
+      o.textContent=`${v.name} (${v.lang}) ✨線上`;
+      sel.appendChild(o);
+    });
+    sel.value=allVoices.indexOf(gtw[0]); zhVoice=gtw[0];
+  }else{
+    // 找不到時給提示（多半是沒用 Chrome 或未連網），仍以系統預設繁中發音
+    const o=document.createElement('option');
+    o.value=''; o.textContent='找不到 Google 國語（臺灣）— 請用 Chrome 並連網';
+    sel.appendChild(o); zhVoice=null;
+  }
+}
+if(synth){
+  buildVoiceList();
+  synth.onvoiceschanged=buildVoiceList;   // 語音清單常延遲載入，載好再補上
+  $('voiceSel').addEventListener('change',()=>{
+    zhVoice=allVoices[parseInt($('voiceSel').value)]||null;
+    if(narrating) speakCurrent();          // 立即試聽新語音
+  });
+}
+// 將整頁（標題＋各段）切成短句，標題只在最前面唸一次，
+// 短句可避開 Chrome 長語句會從頭重播的已知問題（造成標題重複）。
+function buildChunks(s){
+  const out=[];
+  [s.title, ...s.paras].forEach(t=>{
+    (t||'').split(/(?<=[。！？!?；;：])/).forEach(p=>{ p=p.trim(); if(p) out.push(p); });
+  });
+  return out;
+}
+let speakGen=0;   // 世代編號，讓被取消的舊回呼失效，避免重播/重複
+function speakCurrent(){
+  if(!synth){ alert('您的瀏覽器不支援語音朗讀，請改用 Chrome 或 Edge。'); return; }
+  const gen=++speakGen;
+  synth.cancel(); clearTimeout(advanceTimer);
+  const chunks=buildChunks(SLIDES[cur]);
+  const rate=Math.min(2,Math.max(0.5,parseFloat($('rateIn').value)||0.95));
+  const pitch=Math.min(1.5,Math.max(0.5,parseFloat($('pitchIn').value)||1));
+  let i=0;
+  (function next(){
+    if(gen!==speakGen) return;                 // 已被新的朗讀取代
+    if(i>=chunks.length){                       // 本頁唸完
+      if(narrating && cur<SLIDES.length-1){ advanceTimer=setTimeout(()=>{ if(narrating && gen===speakGen) go(cur+1); },900); }
+      else if(narrating){ stopPlay(); }         // 最後一頁停止
+      return;
+    }
+    const u=new SpeechSynthesisUtterance(chunks[i]);
+    u.lang='zh-TW'; if(zhVoice) u.voice=zhVoice; u.rate=rate; u.pitch=pitch;
+    u.onend=()=>{ if(gen!==speakGen) return; i++;
+      // 句與句之間留一點自然停頓，聽起來比較像人在說話
+      const gap = /[。！？!?]$/.test(chunks[i-1]) ? 260 : 90;
+      setTimeout(()=>{ if(gen===speakGen) next(); }, gap);
+    };
+    u.onerror=()=>{};                           // 取消時的 error 忽略
+    synth.speak(u);
+  })();
+}
+// ---- 統一播放控制 ----
+// 模式一：勾選「朗讀完才換頁」→ 由旁白驅動，唸完整頁才換頁（不受秒數限制）
+// 模式二：取消勾選 → 依上方秒數固定換頁（無旁白）
+function secs(){ let v=parseInt($('secIn').value)||8; return Math.max(1,v)*1000; }
+function uiReset(){
+  $('autoBtn').classList.remove('on'); $('autoBtn').innerHTML='▶ 自動播放';
+  $('speakBtn').classList.remove('on'); $('speakBtn').innerHTML='🔊 朗讀旁白';
+  $('fsAuto').innerHTML='▶ 自動播放'; $('fsSpeak').innerHTML='🔊 朗讀旁白';
+  badge.classList.remove('show');
+}
+function stopPlay(){                     // 停止所有播放（計時＋旁白）
+  clearInterval(autoTimer); autoTimer=null;
+  narrating=false; if(synth) synth.cancel(); clearTimeout(advanceTimer);
+  uiReset();
+}
+function startTimer(){                   // 秒數驅動（無旁白）
+  stopPlay(); autoTimer=setInterval(nextS,secs());
+  $('autoBtn').classList.add('on'); $('autoBtn').innerHTML='⏸ 停止播放';
+  $('fsAuto').innerHTML='⏸ 停止播放';
+  badge.textContent='自動播放中…'; badge.classList.add('show');
+}
+function startNarrate(){                 // 旁白驅動：唸完才換頁
+  stopPlay(); narrating=true;
+  $('speakBtn').classList.add('on'); $('speakBtn').innerHTML='⏹ 停止朗讀';
+  $('autoBtn').classList.add('on'); $('autoBtn').innerHTML='⏸ 停止播放';
+  $('fsSpeak').innerHTML='⏹ 停止朗讀'; $('fsAuto').innerHTML='⏸ 停止播放';
+  badge.textContent='旁白朗讀中…'; badge.classList.add('show');
+  speakCurrent();
+}
+function isPlaying(){ return !!autoTimer || narrating; }
+function startPlay(){ $('waitSpeak').checked ? startNarrate() : startTimer(); }
+function togglePlay(){ isPlaying()?stopPlay():startPlay(); }
+
+$('autoBtn').onclick=togglePlay;
+$('fsAuto').onclick=togglePlay;
+$('speakBtn').onclick=()=>{ narrating?stopPlay():startNarrate(); };
+$('fsSpeak').onclick=()=>{ narrating?stopPlay():startNarrate(); };
+// 調整語速或音調時，若正在朗讀則即時套用到本頁
+$('rateIn').addEventListener('change',()=>{ if(narrating) speakCurrent(); });
+$('pitchIn').addEventListener('change',()=>{ if(narrating) speakCurrent(); });
+
+$('next').onclick=nextS; $('prev').onclick=prevS;
+$('fsNext').onclick=nextS; $('fsPrev').onclick=prevS;
+
+jumpIn.addEventListener('change',()=>{
+  let v=parseInt(jumpIn.value)||1; v=Math.max(1,Math.min(70,v)); go(v-1);
+});
+
+// ---- fullscreen ----
+function openFS(){
+  fs.classList.add('show'); render();
+  if(document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(()=>{});
+}
+function closeFS(){
+  fs.classList.remove('show');
+  if(document.fullscreenElement) document.exitFullscreen().catch(()=>{});
+}
+$('fsBtn').onclick=openFS; $('fsExit').onclick=closeFS;
+document.addEventListener('fullscreenchange',()=>{ if(!document.fullscreenElement && fs.classList.contains('show')) closeFS(); });
+
+// ---- theme ----
+$('themeBtn').onclick=()=>{
+  const h=document.documentElement, b=document.body;
+  const dark=b.getAttribute('data-theme')!=='dark';
+  b.setAttribute('data-theme',dark?'dark':'light');
+  h.setAttribute('data-theme',dark?'dark':'light');
+  $('themeBtn').innerHTML=dark?'☀️ 淺色':'🌙 深色';
+};
+// sync html attr initially
+document.documentElement.setAttribute('data-theme','light');
+
+// ---- keyboard ----
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'||e.key==='PageDown'){ nextS(); }
+  else if(e.key==='ArrowLeft'||e.key==='PageUp'){ prevS(); }
+  else if(e.key==='Escape'){ if(fs.classList.contains('show')) closeFS(); }
+  else if(e.key==='f'||e.key==='F'){ fs.classList.contains('show')?closeFS():openFS(); }
+});
+
+// ---- swipe (touch) on slide & fullscreen ----
+function addSwipe(el){
+  let x0=null;
+  el.addEventListener('touchstart',e=>{ x0=e.touches[0].clientX; },{passive:true});
+  el.addEventListener('touchend',e=>{
+    if(x0===null)return; const dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>45){ dx<0?nextS():prevS(); } x0=null;
+  },{passive:true});
+}
+addSwipe(document.querySelector('.slide-pane'));
+addSwipe(fs);
+
+// mouse wheel on filmstrip -> horizontal scroll
+strip.addEventListener('wheel',e=>{ if(e.deltaY){ strip.scrollLeft+=e.deltaY; e.preventDefault(); } },{passive:false});
+
+// 離開頁面時停止語音
+window.addEventListener('beforeunload',()=>{ if(synth) synth.cancel(); });
+
+render();
+</script>
+</body>
+</html>
