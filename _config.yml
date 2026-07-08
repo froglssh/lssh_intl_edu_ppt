@@ -1,0 +1,12 @@
+# Jekyll configuration
+exclude:
+  - scripts
+  - drafts
+  - "行动研究＿日本教育旅行＿简报.pptx"
+  - "行动研究＿日本教育旅行＿简报.pdf"
+  - speech_intro.md
+  - speech.md
+  - outline.md
+  - deck_spec.json
+  - slide_jobs.json
+  - slide_run_state.json
